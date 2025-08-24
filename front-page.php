@@ -58,13 +58,13 @@
 <!-- Navigation -->
 <nav class="navbar">
     <div class="nav-container">
-        <!-- Hamburger Menu Button (Mobile Only) -->
+            <!-- Hamburger Menu Button (Mobile Only) -->
         <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu">
             <span></span>
             <span></span>
             <span></span>
         </button>
- 
+        
         <a href="<?php echo home_url(); ?>" class="logo">
             <img src="<?php echo get_template_directory_uri(); ?>/images/your-logo.png" alt="M&M Office Solutions" />
         </a>
@@ -211,36 +211,38 @@
         <!-- Contact Form Container -->
         <div class="contact-form-container">
             <?php 
-            // Replace 'YOUR_FORM_ID' with your actual WPForms form ID
             if (function_exists('wpforms_display')) {
-                wpforms_display('13'); // Change this to your form ID number
+                wpforms_display('13');
             } else {
-                // Fallback if WPForms is not active
-                echo '<p style="text-align: center; color: white;">Contact form temporarily unavailable. Please email us directly at <a href="mailto:info@mmoffice.ca" style="color: #14b8a6;">info@mmoffice.ca</a></p>';
+                echo '<p class="form-fallback">Contact form temporarily unavailable. Please email us directly at <a href="mailto:info@mmoffice.ca">info@mmoffice.ca</a></p>';
             }
             ?>
-        </div>        
+        </div>
         
         <!-- Alternative Contact Methods -->
-        <div style="margin-top: 3rem; text-align: center;">
-            <p style="color: rgba(255,255,255,0.8); margin-bottom: 1rem;">Or reach us directly:</p>
-            <div class="hero-buttons" style="justify-content: center;">
+        <div class="alternative-contact">
+            <p class="contact-prompt">Or reach us directly:</p>
+            <div class="hero-buttons">
                 <a href="tel:250-307-1395" class="btn-primary">Call Now</a>
                 <a href="mailto:info@mmoffice.ca" class="btn-secondary">Email Us</a>
             </div>
         </div>
         
-        <!-- Keep your existing contact info -->
+        <!-- Contact Information -->
         <div class="contact-info">
             <div class="contact-item">
                 <div class="contact-icon">📞</div>
                 <div class="contact-label">Phone</div>
-                <div class="contact-value"><a href="tel:250-307-1395" style="color: inherit; text-decoration: none;">(250) 307-1395</a></div>
+                <div class="contact-value">
+                    <a href="tel:250-307-1395">(250) 307-1395</a>
+                </div>
             </div>
             <div class="contact-item">
                 <div class="contact-icon">✉️</div>
                 <div class="contact-label">Email</div>
-                <div class="contact-value"><a href="mailto:info@mmoffice.ca" style="color: inherit; text-decoration: none;">info@mmoffice.ca</a></div>
+                <div class="contact-value">
+                    <a href="mailto:info@mmoffice.ca">info@mmoffice.ca</a>
+                </div>
             </div>
             <div class="contact-item">
                 <div class="contact-icon">📍</div>
