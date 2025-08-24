@@ -760,24 +760,39 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* WPForms Success Message Styling */
-.contact-form-container .wpforms-confirmation-container-full {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: white;
-    padding: 2rem;
-    border-radius: 15px;
-    text-align: center;
-    margin: 1rem auto;
-    max-width: 400px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+.contact-form-container .wpforms-confirmation-container-full,
+.wpforms-confirmation-container-full,
+.wpforms-container-full .wpforms-form .wpforms-confirmation-container-full {
+    background: rgba(255, 255, 255, 0.15) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+    padding: 2rem !important;
+    border-radius: 15px !important;
+    text-align: center !important;
+    margin: 1rem auto !important;
+    max-width: 400px !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important;
 }
 
-.contact-form-container .wpforms-confirmation-container-full p {
-    color: white;
-    font-size: 1.1rem;
-    font-weight: 500;
-    margin: 0;
+.contact-form-container .wpforms-confirmation-container-full p,
+.wpforms-confirmation-container-full p,
+.wpforms-container-full .wpforms-form .wpforms-confirmation-container-full p {
+    color: white !important;
+    font-size: 1.1rem !important;
+    font-weight: 500 !important;
+    margin: 0 !important;
+    background: none !important;
+    border: none !important;
+}
+
+/* Additional overrides for any green styling */
+.wpforms-confirmation-container-full {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.wpforms-confirmation-container-full p {
+    background-color: transparent !important;
 }
 
 /* Mobile Responsiveness */
