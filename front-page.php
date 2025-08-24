@@ -3,24 +3,7 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    
-    <!-- SEO Meta Tags -->
-    <title><?php bloginfo('name'); ?> | Accounting, Tax & Office Equipment Services | Vernon, BC</title>
-    <meta name="description" content="M&M Office Solutions provides expert accounting, bookkeeping, tax preparation, and office equipment services in Vernon, BC. 40+ years combined experience serving local businesses.">
-    <meta name="keywords" content="accounting Vernon BC, tax preparation Vernon, bookkeeping services, office equipment repair, printer repair Vernon, IT support Vernon">
-    <meta name="author" content="M&M Office Solutions">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Open Graph (Social Media) -->
-    <meta property="og:title" content="M&M Office Solutions | Accounting & Office Equipment | Vernon, BC">
-    <meta property="og:description" content="Expert accounting, tax services, and office equipment support for Vernon businesses. Professional, reliable, local.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="<?php echo home_url(); ?>">
-    <meta property="og:site_name" content="M&M Office Solutions">
 
-    <!-- Google Meta Tag -->
-    <meta name="google-site-verification" content="azxWqTwRNQKFZKAMRGimKGqXyN3ii3SS7cChh_u__BQ" />
-    
     <!-- Local Business Schema -->
     <script type="application/ld+json">
     {
@@ -41,7 +24,7 @@
         "serviceArea": "Vernon, BC and surrounding areas"
     }
     </script>
-    
+
     <!-- Canonical URL -->
     <link rel="canonical" href="<?php echo esc_url(home_url()); ?>">
     
