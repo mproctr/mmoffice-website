@@ -4,29 +4,30 @@ Theme URI: https://mmoffice.ca
 Author: Miles Procter
 Author URI: https://mmoffice.ca
 Description: Custom theme for M&M Office Solutions
-Template: twentytwentyfour
 Version: 1.0.0
 */
-        /* Import fonts - Play for headings to match logo, Inter for body */
-        @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+/* Import fonts - Play for headings to match logo, Inter for body */
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            overflow-x: hidden;
-        }
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        /* Use Play font for headings to match logo */
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Play', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        }
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Use Play font for headings to match logo */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Play', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
 
 /* Navigation */
 .navbar {
@@ -98,24 +99,24 @@ Version: 1.0.0
 
 /* CTA Button Styling */
 .cta-button {
-    background: linear-gradient(135deg, #14b8a6, #0891b2) !important;
-    color: white !important;
-    padding: 0.7rem 1.5rem !important;
-    border-radius: 50px !important;
-    text-decoration: none !important;
-    font-weight: 600 !important;
-    transition: all 0.3s ease !important;
-    box-shadow: 0 4px 15px rgba(20, 184, 166, 0.3) !important;
-    white-space: nowrap !important;
-    margin-left: auto !important;
-    border: none !important;
-    display: inline-block !important;
+    background: linear-gradient(135deg, #14b8a6, #0891b2);
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(20, 184, 166, 0.3);
+    white-space: nowrap;
+    margin-left: auto;
+    border: none;
+    display: inline-block;
 }
 
 .cta-button:hover {
-    transform: translateY(-2px) !important;
-    box-shadow: 0 8px 25px rgba(20, 184, 166, 0.4) !important;
-    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(20, 184, 166, 0.4);
+    color: white;
 }
 
 /* Hamburger Button - Hidden by default */
@@ -194,688 +195,624 @@ Version: 1.0.0
     color: #14b8a6;
 }
 
-/* DESKTOP ONLY - Force hide mobile elements */
-@media screen and (min-width: 769px) {
-    .hamburger {
-        display: none !important;
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #14b8a6 0%, #0891b2 50%, #0284c7 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="%23ffffff08" points="0,1000 1000,0 1000,1000"/></svg>');
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.hero-content {
+    color: white;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    color: white;
+    font-family: 'Play', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    font-weight: 300;
+    color: white;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: white;
+    color: #0891b2;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-secondary:hover {
+    background: white;
+    color: #0891b2;
+    transform: translateY(-2px);
+}
+
+.hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.value-props {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 350px;
+}
+
+.value-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 1.5rem;
+    color: white;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    animation: gentleFloat 4s ease-in-out infinite;
+}
+
+.value-card:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.value-card:nth-child(2) {
+    animation-delay: 1.3s;
+}
+
+.value-card:nth-child(3) {
+    animation-delay: 2.6s;
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+    animation-play-state: paused;
+}
+
+@keyframes gentleFloat {
+    0%, 100% { 
+        transform: translateY(0px); 
     }
-    
-    .mobile-menu {
-        display: none !important;
-    }
-    
-    .mobile-nav-links {
-        display: none !important;
-    }
-    
-    /* Ensure desktop nav container is proper */
-    .nav-container {
-        max-width: 1200px !important;
-        margin: 0 auto !important;
-        display: flex !important;
-        justify-content: flex-start !important;
-        align-items: center !important;
-        padding: 0 2rem !important;
-        gap: 2rem !important;
-    }
-    
-    .nav-links {
-        display: flex !important;
-    }
-    
-    .cta-button {
-        margin-left: auto !important;
+    50% { 
+        transform: translateY(-10px); 
     }
 }
 
-/* MOBILE ONLY - Show mobile elements, hide desktop nav */
-@media screen and (max-width: 768px) {
-    .nav-container {
-        max-width: none !important;
-        margin: 0 !important;
-        display: flex !important;
-        flex-direction: row !important;
-        justify-content: space-between !important;
-        align-items: center !important;
-        padding: 0 1rem !important;
-        gap: 0 !important;
-    }
-    
-    /* Left group: Hamburger + Logo */
-    .hamburger {
-        display: flex !important;
-        margin-right: 1rem !important;
-    }
-    
-    .logo {
-        height: 35px !important;
-        margin: 0 !important;
-        margin-right: auto !important;
-    }
-    
-    .logo img {
-        height: 30px;
-    }
-    
-    /* Hide desktop navigation on mobile */
-    .nav-links {
-        display: none !important;
-    }
-    
-    /* Show mobile menu when active */
-    .mobile-menu {
-        display: block !important;
-    }
-    
-    .mobile-nav-links {
-        display: flex !important;
-    }
-    
-    .cta-button {
-        font-size: 0.8rem !important;
-        padding: 0.5rem 1rem !important;
-        white-space: nowrap !important;
-        min-width: 90px !important;
-        text-align: center !important;
-        margin-left: 0 !important;
-    }
+.card-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #14b8a6 0%, #0891b2 50%, #0284c7 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="%23ffffff08" points="0,1000 1000,0 1000,1000"/></svg>');
-        }
-
-        .hero-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-            position: relative;
-            z-index: 2;
-            min-height: 100vh;
-            padding-top: 100px;
-            padding-bottom: 50px;
-        }
-
-        .hero-content {
-            color: white;
-        }
-
-        .hero-title {
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            line-height: 1.2;
-            color: white;
-            font-family: 'Play', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        }
-
-        .hero-subtitle {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-            font-weight: 300;
-            color: white;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .btn-primary, .btn-secondary {
-            padding: 1rem 2rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            display: inline-block;
-        }
-
-        .btn-primary {
-            background: white;
-            color: #0891b2;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: white;
-            border: 2px solid white;
-        }
-
-        .btn-secondary:hover {
-            background: white;
-            color: #0891b2;
-            transform: translateY(-2px);
-        }
-
-        .hero-visual {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .value-props {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1.5rem;
-            max-width: 350px;
-        }
-
-        .value-card {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 15px;
-            padding: 1.5rem;
-            color: white;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: transform 0.3s ease;
-            animation: gentleFloat 4s ease-in-out infinite;
-        }
-
-        .value-card:nth-child(1) {
-            animation-delay: 0s;
-        }
-
-        .value-card:nth-child(2) {
-            animation-delay: 1.3s;
-        }
-
-        .value-card:nth-child(3) {
-            animation-delay: 2.6s;
-        }
-
-        .value-card:hover {
-            transform: translateY(-8px);
-            animation-play-state: paused;
-        }
-
-        @keyframes gentleFloat {
-            0%, 100% { 
-                transform: translateY(0px); 
-            }
-            50% { 
-                transform: translateY(-10px); 
-            }
-        }
-
-        .card-icon {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .card-title {
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .card-text {
-            font-size: 0.9rem;
-            opacity: 0.9;
-        }
-
-        /* Services Section */
-        .services {
-            padding: 6rem 0;
-            background: #f8fafc;
-        }
-
-        .services-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #1e293b;
-            margin-bottom: 1rem;
-            font-family: 'Play', 'Inter', sans-serif;
-        }
-
-        .section-subtitle {
-            font-size: 1.2rem;
-            color: #64748b;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        /* Services Grid - Desktop First */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .service-card {
-        background: white;
-        padding: 3rem 2rem;
-        border-radius: 20px;
-        text-align: center;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-        transition: all 0.3s ease;
-        position: relative;
-        overflow: hidden;
-        }
-
-        /* Tablet - 2 columns */
-        @media (max-width: 1200px) {
-            .services-grid {
-                grid-template-columns: repeat(2, 1fr);
-                max-width: 800px;
-                margin: 2rem auto 0;
-            }
-        }
-        
-        /*Mobile - 1 column*/
-        @media (max-width: 768px) {
-            .services-grid {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
-            }
-        }
-
-        .service-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(135deg, #14b8a6, #0891b2);
-            transform: scaleX(0);
-            transition: transform 0.3s ease;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-        }
-
-        .service-card:hover::before {
-            transform: scaleX(1);
-        }
-
-        .service-icon {
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
-            color: #14b8a6;
-        }
-
-        .service-title {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            color: #1e293b;
-            font-family: 'Play', 'Inter', sans-serif;
-        }
-
-        .service-description {
-            color: #64748b;
-            margin-bottom: 2rem;
-        }
-
-        .service-features {
-            list-style: none;
-            text-align: left;
-        }
-
-        .service-features li {
-            padding: 0.5rem 0;
-            color: #475569;
-            position: relative;
-            padding-left: 1.5rem;
-        }
-
-        .service-features li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: #14b8a6;
-            font-weight: bold;
-        }
-
-        /* Team Section */
-        .team {
-            padding: 6rem 0;
-            background: white;
-        }
-
-        .team-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 3rem;
-            margin-top: 4rem;
-        }
-
-        .team-card {
-            text-align: center;
-            background: white;
-            border-radius: 20px;
-            padding: 2rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-        }
-
-        .team-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-        }
-
-        .team-photo {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin: 0 auto 2rem;
-            object-fit: cover;
-            border: 4px solid #f1f5f9;
-            transition: all 0.3s ease;
-        }
-
-        .team-card:hover .team-photo {
-            border-color: #14b8a6;
-        }
-
-        .team-name {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #1e293b;
-            margin-bottom: 0.5rem;
-        }
-
-        .team-role {
-            color: #0891b2;
-            font-weight: 500;
-            margin-bottom: 1rem;
-        }
-
-        .team-bio {
-            color: #64748b;
-            line-height: 1.6;
-        }
-
-        /* CTA Section */
-        .cta-section {
-            background: linear-gradient(135deg, #1e293b, #334155);
-            padding: 6rem 0;
-            text-align: center;
-            color: white;
-        }
-
-        .cta-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        .cta-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            color: white;
-            font-family: 'Play', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        }
-
-        .cta-text {
-            font-size: 1.2rem;
-            margin-bottom: 3rem;
-            opacity: 0.9;
-            color: white;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        }
-
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            margin-top: 3rem;
-            flex-wrap: wrap;
-        }
-
-        .contact-item {
-            text-align: center;
-        }
-
-        .contact-icon {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: #14b8a6;
-        }
-
-        .contact-label {
-            font-size: 0.9rem;
-            opacity: 0.8;
-            margin-bottom: 0.5rem;
-        }
-
-        .contact-value {
-            font-size: 1.1rem;
-            font-weight: 600;
-        }
-
-        /* Copyright Footer */
-        .copyright-footer {
-            background: #f8fafc;
-            text-align: center;
-            padding: 1rem;
-            font-size: 0.9rem;
-            color: #64748b;
-            border-top: 1px solid #e2e8f0;
-        }
-
-        /* Contact Form Styling - Centered Version */
-        .contact-form-container {
-            max-width: 600px;
-            margin: 2rem auto 0;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 2rem;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        /* Style WPForms elements to match your design */
-        .contact-form-container .wpforms-container {
-            background: transparent !important;
-        }
-
-        .contact-form-container .wpforms-form {
-            background: transparent !important;
-        }
-
-        /* Center all form fields */
-        .contact-form-container .wpforms-field {
-            text-align: center !important;
-            margin-bottom: 1.5rem !important;
-        }
-
-        .contact-form-container .wpforms-field-label {
-            color: white !important;
-            font-weight: 500 !important;
-            margin-bottom: 0.5rem !important;
-            font-family: 'Inter', sans-serif !important;
-            text-align: center !important;
-            display: block !important;
-        }
-
-        .contact-form-container .wpforms-field input,
-        .contact-form-container .wpforms-field textarea,
-        .contact-form-container .wpforms-field select {
-            background: rgba(255, 255, 255, 0.9) !important;
-            border: 1px solid rgba(255, 255, 255, 0.3) !important;
-            border-radius: 10px !important;
-            padding: 0.75rem 1rem !important;
-            font-family: 'Inter', sans-serif !important;
-            font-size: 1rem !important;
-            color: #333 !important;
-            width: 100% !important;
-            max-width: 400px !important;
-            margin: 0 auto !important;
-            text-align: left !important;
-            transition: all 0.3s ease !important;
-            display: block !important;
-            line-height: 1.5 !important;
-            min-height: 45px !important;
-        }
-
-        /* Extra padding for dropdown to prevent text cutoff */
-        .contact-form-container .wpforms-field select {
-            padding: 0.5rem 1rem 0.85rem 1rem !important;
-            min-height: 45px !important;
-            line-height: 1.4 !important;
-            vertical-align: middle !important;
-            box-sizing: border-box !important;
-        }
-
-        /* Additional dropdown fixes */
-        .contact-form-container .wpforms-field-select select {
-            padding: 0.5rem 1rem 0.85rem 1rem !important;
-            min-height: 45px !important;
-            line-height: 1.4 !important;
-        }
-
-        /* Fix for any dropdown wrapper issues */
-        .contact-form-container .wpforms-field-select {
-            line-height: 1.4 !important;
-        }
-
-        .contact-form-container .wpforms-field input:focus,
-        .contact-form-container .wpforms-field textarea:focus,
-        .contact-form-container .wpforms-field select:focus {
-            outline: none !important;
-            border-color: #14b8a6 !important;
-            box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.2) !important;
-            background: white !important;
-        }
-
-        .contact-form-container .wpforms-submit-container {
-            text-align: center !important;
-            margin-top: 1.5rem !important;
-        }
-
-        .contact-form-container .wpforms-submit {
-            background: linear-gradient(135deg, #14b8a6, #0891b2) !important;
-            color: white !important;
-            padding: 1rem 2rem !important;
-            border: none !important;
-            border-radius: 50px !important;
-            font-weight: 600 !important;
-            font-size: 1rem !important;
-            cursor: pointer !important;
-            transition: all 0.3s ease !important;
-            box-shadow: 0 4px 15px rgba(20, 184, 166, 0.3) !important;
-            font-family: 'Inter', sans-serif !important;
-            min-width: 150px !important;
-            height: auto !important;
-            line-height: 1.5 !important;
-            white-space: nowrap !important;
-        }
-
-        .contact-form-container .wpforms-submit:hover {
-            transform: translateY(-2px) !important;
-            box-shadow: 0 8px 25px rgba(20, 184, 166, 0.4) !important;
-        }
-
-        /* WPForms Success Message Styling */
-        .contact-form-container .wpforms-confirmation-container-full {
-            background: rgba(255, 255, 255, 0.15) !important;
-            backdrop-filter: blur(10px) !important;
-            border: 1px solid rgba(255, 255, 255, 0.2) !important;
-            color: white !important;
-            padding: 2rem !important;
-            border-radius: 15px !important;
-            text-align: center !important;
-            margin: 1rem auto !important;
-            max-width: 400px !important;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important;
-        }
-
-        .contact-form-container .wpforms-confirmation-container-full p {
-            color: white !important;
-            font-size: 1.1rem !important;
-            font-weight: 500 !important;
-            margin: 0 !important;
-        }
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Services Section */
+.services {
+    padding: 6rem 0;
+    background: #f8fafc;
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 1rem;
+    font-family: 'Play', 'Inter', sans-serif;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #64748b;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Services Grid - Desktop First */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.service-card {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, #14b8a6, #0891b2);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover::before {
+    transform: scaleX(1);
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #14b8a6;
+}
+
+.service-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1e293b;
+    font-family: 'Play', 'Inter', sans-serif;
+}
+
+.service-description {
+    color: #64748b;
+    margin-bottom: 2rem;
+}
+
+.service-features {
+    list-style: none;
+    text-align: left;
+}
+
+.service-features li {
+    padding: 0.5rem 0;
+    color: #475569;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.service-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #14b8a6;
+    font-weight: bold;
+}
+
+/* Team Section */
+.team {
+    padding: 6rem 0;
+    background: white;
+}
+
+.team-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.team-card {
+    text-align: center;
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.team-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 2rem;
+    object-fit: cover;
+    border: 4px solid #f1f5f9;
+    transition: all 0.3s ease;
+}
+
+.team-card:hover .team-photo {
+    border-color: #14b8a6;
+}
+
+.team-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+
+.team-role {
+    color: #0891b2;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.team-bio {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, #1e293b, #334155);
+    padding: 6rem 0;
+    text-align: center;
+    color: white;
+}
+
+.cta-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.cta-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: white;
+    font-family: 'Play', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.cta-text {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+    color: white;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    text-align: center;
+}
+
+.contact-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #14b8a6;
+}
+
+.contact-label {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-bottom: 0.5rem;
+}
+
+.contact-value {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* Copyright Footer */
+.copyright-footer {
+    background: #f8fafc;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #64748b;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* Contact Form Styling - Centered Version */
+.contact-form-container {
+    max-width: 600px;
+    margin: 2rem auto 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Style WPForms elements to match design */
+.contact-form-container .wpforms-container {
+    background: transparent;
+}
+
+.contact-form-container .wpforms-form {
+    background: transparent;
+}
+
+/* Center all form fields */
+.contact-form-container .wpforms-field {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact-form-container .wpforms-field-label {
+    color: white;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    display: block;
+}
+
+.contact-form-container .wpforms-field input,
+.contact-form-container .wpforms-field textarea,
+.contact-form-container .wpforms-field select {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+    transition: all 0.3s ease;
+    display: block;
+    line-height: 1.5;
+    min-height: 45px;
+}
+
+/* Extra padding for dropdown to prevent text cutoff */
+.contact-form-container .wpforms-field select,
+.contact-form-container .wpforms-field-select select {
+    padding: 0.5rem 1rem 0.85rem 1rem;
+    min-height: 45px;
+    line-height: 1.4;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+/* Fix for dropdown wrapper issues */
+.contact-form-container .wpforms-field-select {
+    line-height: 1.4;
+}
+
+.contact-form-container .wpforms-field input:focus,
+.contact-form-container .wpforms-field textarea:focus,
+.contact-form-container .wpforms-field select:focus {
+    outline: none;
+    border-color: #14b8a6;
+    box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.2);
+    background: white;
+}
+
+.contact-form-container .wpforms-submit-container {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.contact-form-container .wpforms-submit {
+    background: linear-gradient(135deg, #14b8a6, #0891b2);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(20, 184, 166, 0.3);
+    font-family: 'Inter', sans-serif;
+    min-width: 150px;
+    height: auto;
+    line-height: 1.5;
+    white-space: nowrap;
+}
+
+.contact-form-container .wpforms-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(20, 184, 166, 0.4);
+}
+
+/* WPForms Success Message Styling */
+.contact-form-container .wpforms-confirmation-container-full {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    margin: 1rem auto;
+    max-width: 400px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container .wpforms-confirmation-container-full p {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0;
+}
 
 /* Mobile Responsiveness */
+@media screen and (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
+    
+    .mobile-menu {
+        display: none;
+    }
+    
+    .mobile-nav-links {
+        display: none;
+    }
+    
+    .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 2rem;
+        gap: 2rem;
+    }
+    
+    .nav-links {
+        display: flex;
+    }
+    
+    .cta-button {
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 800px;
+        margin: 2rem auto 0;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .navbar {
         padding: 0.5rem 0;
     }
     
     .nav-container {
-        max-width: none !important;
-        margin: 0 !important;
-        display: flex !important;
-        flex-direction: row !important;
-        justify-content: space-between !important;
-        align-items: center !important;
-        padding: 0 1rem !important;
-        gap: 0 !important;
+        max-width: none;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+        gap: 0;
     }
     
-    /* Left group: Hamburger + Logo */
     .hamburger {
-        display: flex !important;
-        margin-right: 1rem !important;
+        display: flex;
+        margin-right: 1rem;
     }
     
     .logo {
-        height: 35px !important;
-        margin: 0 !important;
-        margin-right: auto !important;
+        height: 35px;
+        margin: 0;
+        margin-right: auto;
     }
     
     .logo img {
         height: 30px;
     }
     
-    /* Hide desktop navigation on mobile */
     .nav-links {
-        display: none !important;
+        display: none;
+    }
+    
+    .mobile-menu {
+        display: block;
+    }
+    
+    .mobile-nav-links {
+        display: flex;
     }
     
     .cta-button {
@@ -884,6 +821,7 @@ Version: 1.0.0
         white-space: nowrap;
         min-width: 90px;
         text-align: center;
+        margin-left: 0;
     }
 
     .hero-container {
@@ -904,6 +842,11 @@ Version: 1.0.0
     .value-props {
         width: 300px;
         margin: 0 auto;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 
     .section-title {
@@ -929,7 +872,6 @@ Version: 1.0.0
         text-align: center;
     }
 
-    /* Mobile form responsiveness */
     .contact-form-container {
         margin: 2rem 1rem 0;
         padding: 1.5rem;
@@ -938,17 +880,6 @@ Version: 1.0.0
     .contact-form-container .wpforms-field input,
     .contact-form-container .wpforms-field textarea,
     .contact-form-container .wpforms-field select {
-        max-width: 100% !important;
+        max-width: 100%;
     }
 }
-
-        /* Desktop - hamburger is hidden, nav-links stay visible */
-        @media screen and (min-width: 769px) {
-            .hamburger {
-                display: none !important;
-            }
-            
-            .mobile-menu {
-                display: none !important;
-            }
-        }
