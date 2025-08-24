@@ -24,9 +24,6 @@
         "serviceArea": "Vernon, BC and surrounding areas"
     }
     </script>
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="<?php echo esc_url(home_url()); ?>">
     
 <!-- WordPress head - for plugins and admin -->
     <?php wp_head(); ?>
