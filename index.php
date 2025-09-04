@@ -6,24 +6,82 @@
 
     <!-- Local Business Schema -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "M&M Office Solutions",
-        "description": "Accounting, bookkeeping, tax preparation, and office equipment services",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Vernon",
-            "addressRegion": "BC",
-            "addressCountry": "CA"
+{
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "AccountingService", "TaxPreparationService"],
+    "name": "M&M Office Solutions",
+    "description": "Accounting, bookkeeping, tax preparation services, and office equipment support in Vernon, BC",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Vernon",
+        "addressRegion": "BC",
+        "addressCountry": "CA"
+    },
+    "telephone": "+1-250-307-1395",
+    "email": "info@mmoffice.ca",
+    "url": "<?php echo home_url(); ?>",
+    "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": "50.2671",
+            "longitude": "-119.2721"
         },
-        "telephone": "+1-250-307-1395",
-        "email": "info@mmoffice.ca",
-        "url": "<?php echo home_url(); ?>",
-        "priceRange": "$",
-        "serviceArea": "Vernon, BC and surrounding areas"
+        "geoRadius": "50000"
+    },
+    "services": [
+        "Accounting Services",
+        "Bookkeeping", 
+        "Tax Preparation",
+        "Tax Planning",
+        "Payroll Processing",
+        "Office Equipment Repair",
+        "Printer Repair",
+        "Office Supplies",
+        "IT Support",
+        "Network Troubleshooting"
+    ],
+    "priceRange": "$",
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Complete Business Solutions",
+        "itemListElement": [
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Accounting Services",
+                    "description": "Professional accounting, bookkeeping and financial management for small businesses in Vernon, BC"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Tax Preparation",
+                    "description": "Personal and corporate tax returns, tax planning and CRA compliance services"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Office Equipment Services",
+                    "description": "Printer repair, maintenance, office equipment support and IT troubleshooting for Vernon businesses"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Product",
+                    "name": "Office Supplies",
+                    "description": "Printer toner, ink cartridges, and office supplies for businesses in Vernon, BC"
+                }
+            }
+        ]
     }
-    </script>
+}
+</script>
     
 <!-- WordPress head - for plugins and admin -->
     <?php wp_head(); ?>
@@ -74,7 +132,7 @@
     <div class="hero-container">
         <div class="hero-content">
             <h1 class="hero-title">Vernon's Trusted Accounting & Office Technology Experts</h1>
-            <p class="hero-subtitle">Expert accounting, tax services, and office equipment support to keep your business running smoothly and efficiently.</p>
+            <p class="hero-subtitle">Expert accounting, bookkeeping, tax preparation services and office equipment support to keep your Vernon business running smoothly and efficiently.</p>
             <div class="hero-buttons">
                 <a href="#contact" class="btn-primary">Get Started Today</a>
                 <a href="#services" class="btn-secondary">View Services</a>
@@ -85,7 +143,7 @@
                 <div class="value-card">
                     <div class="card-icon">📊</div>
                     <div class="card-title">Accounting & Tax</div>
-                    <div class="card-text">Professional financial services for your business success</div>
+                    <div class="card-text">Professional accounting, bookkeeping and tax preparation for your business success</div>
                 </div>
                 <div class="value-card">
                     <div class="card-icon">🖨️</div>
@@ -113,7 +171,7 @@
             <div class="service-card">
                 <div class="service-icon">📋</div>
                 <h3 class="service-title">Accounting & Bookkeeping</h3>
-                <p class="service-description">Professional financial management to keep your business compliant and profitable.</p>
+                <p class="service-description">Accounting, bookkeeping and financial management to keep your business compliant and profitable.</p>
                 <ul class="service-features">
                     <li>Monthly bookkeeping & reconciliation</li>
                     <li>Year end preparation</li>
@@ -169,8 +227,8 @@
             <div class="team-card">
                 <img loading="lazy" class="team-photo" src="<?php echo get_template_directory_uri(); ?>/images/miles-headshot.jpg" alt="Miles Procter" />
                 <h3 class="team-name">Miles Procter</h3>
-                <div class="team-role">Accounting & Tax Specialist</div>
-                <p class="team-bio">With over 15 years of experience including public practice, Miles specializes in accounting, bookkeeping and tax preparation for individuals, sole-proprietorships and small businesses. He provides accurate, compliant, and stress-free services, ensuring clients stay organized and maximize deductions.</p>
+                <div class="team-role">Accountant & Tax Specialist</div>
+                <p class="team-bio">With over 15 years of experience including public practice, Miles specializes in providing bookkeeping, accounting and tax preparation services to individuals, sole-proprietorships and small businesses. He provides accurate, compliant, and stress-free services, ensuring clients stay organized and maximize deductions.</p>
             </div>
             <div class="team-card">
                 <img loading="lazy" class="team-photo" src="<?php echo get_template_directory_uri(); ?>/images/marvin-headshot.jpg" alt="Marvin Barclay" />
