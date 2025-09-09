@@ -3,14 +3,17 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>M&M Office Solutions | Office Equipment & Accounting Services - Vernon BC</title>
+    <meta name="description" content="Two professional divisions under one roof - office equipment services and accounting/tax services for Vernon, BC businesses. Expert IT support, printer repair, bookkeeping, and tax preparation.">
 
     <!-- Local Business Schema -->
     <script type="application/ld+json">
 {
     "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "AccountingService", "TaxPreparationService"],
+    "@type": ["LocalBusiness", "AccountingService", "TaxPreparationService", "ComputerRepairService"],
     "name": "M&M Office Solutions",
-    "description": "Accounting, bookkeeping, tax preparation services, and office equipment support in Vernon, BC",
+    "description": "Two professional divisions - office equipment services and accounting/tax services for Vernon, BC businesses. Complete IT support, printer repair, bookkeeping, and tax preparation under one roof.",
     "address": {
         "@type": "PostalAddress",
         "addressLocality": "Vernon",
@@ -30,52 +33,52 @@
         "geoRadius": "50000"
     },
     "services": [
+        "Office Equipment Repair",
+        "Printer Repair", 
+        "IT Support",
+        "Network Troubleshooting",
+        "Office Supplies",
         "Accounting Services",
-        "Bookkeeping", 
+        "Bookkeeping",
         "Tax Preparation",
         "Tax Planning",
-        "Payroll Processing",
-        "Office Equipment Repair",
-        "Printer Repair",
-        "Office Supplies",
-        "IT Support",
-        "Network Troubleshooting"
+        "Payroll Processing"
     ],
     "priceRange": "$",
     "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Complete Business Solutions",
+        "name": "Two Professional Divisions",
         "itemListElement": [
             {
                 "@type": "Offer",
                 "itemOffered": {
                     "@type": "Service",
-                    "name": "Accounting Services",
-                    "description": "Professional accounting, bookkeeping and financial management for small businesses in Vernon, BC"
+                    "name": "Office Equipment & IT Services",
+                    "description": "Complete office equipment repair, maintenance, IT support and technology solutions for Vernon businesses"
                 }
             },
             {
                 "@type": "Offer",
                 "itemOffered": {
                     "@type": "Service",
-                    "name": "Tax Preparation",
-                    "description": "Personal and corporate tax returns, tax planning and CRA compliance services"
+                    "name": "Accounting & Tax Services",
+                    "description": "Professional accounting, bookkeeping, tax preparation and financial management for Vernon individuals and businesses"
                 }
             },
             {
                 "@type": "Offer",
                 "itemOffered": {
                     "@type": "Service",
-                    "name": "Office Equipment Services",
-                    "description": "Printer repair, maintenance, office equipment support and IT troubleshooting for Vernon businesses"
+                    "name": "Printer Repair & Maintenance",
+                    "description": "Expert printer repair, maintenance, and support services for all major printer brands"
                 }
             },
             {
                 "@type": "Offer",
                 "itemOffered": {
                     "@type": "Product",
-                    "name": "Office Supplies",
-                    "description": "Printer toner, ink cartridges, and office supplies for businesses in Vernon, BC"
+                    "name": "Office Supplies & Consumables",
+                    "description": "Quality toner cartridges, ink, paper, and office supplies with competitive pricing and delivery"
                 }
             }
         ]
@@ -109,8 +112,10 @@
         
         <!-- Desktop Navigation -->
         <ul class="nav-links">
-            <li><a href="#services">Services</a></li>
-            <li><a href="#team">Team</a></li>
+            <li><a href="<?php echo home_url(); ?>">Home</a></li>
+            <li><a href="<?php echo home_url('/office-equipment'); ?>">Office Equipment & IT</a></li>
+            <li><a href="<?php echo home_url('/accounting-services'); ?>">Accounting & Tax</a></li>
+            <li><a href="#team">Our Team</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         
@@ -121,8 +126,10 @@
 <!-- Mobile Menu Overlay -->
 <div class="mobile-menu" id="mobileMenu">
     <ul class="mobile-nav-links">
-        <li><a href="#services" onclick="closeMobileMenu()">Services</a></li>
-        <li><a href="#team" onclick="closeMobileMenu()">Team</a></li>
+        <li><a href="<?php echo home_url(); ?>" onclick="closeMobileMenu()">Home</a></li>
+        <li><a href="<?php echo home_url('/office-equipment'); ?>" onclick="closeMobileMenu()">Office Equipment & IT</a></li>
+        <li><a href="<?php echo home_url('/accounting-services'); ?>" onclick="closeMobileMenu()">Accounting & Tax</a></li>
+        <li><a href="#team" onclick="closeMobileMenu()">Our Team</a></li>
         <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
     </ul>
 </div>
@@ -131,29 +138,26 @@
 <section class="hero">
     <div class="hero-container">
         <div class="hero-content">
-            <h1 class="hero-title">Vernon's Trusted Accounting & Office Technology Experts</h1>
-            <p class="hero-subtitle">Expert accounting, bookkeeping, tax preparation services and office equipment support to keep your Vernon business running smoothly and efficiently.</p>
+            <h1 class="hero-title">Two Divisions, One Trusted Partner</h1>
+            <p class="hero-subtitle">Complete business solutions for Vernon companies - professional office equipment services and expert accounting support under one roof.</p>
             <div class="hero-buttons">
                 <a href="#contact" class="btn-primary">Get Started Today</a>
-                <a href="#services" class="btn-secondary">View Services</a>
+                <a href="#services" class="btn-secondary">Our Services</a>
             </div>
         </div>
         <div class="hero-visual">
-            <div class="value-props">
-                <div class="value-card">
-                    <div class="card-icon">📊</div>
-                    <div class="card-title">Accounting & Tax</div>
-                    <div class="card-text">Professional accounting, bookkeeping and tax preparation for your business success</div>
+            <div class="service-divisions">
+                <div class="division-card office-division">
+                    <div class="division-icon">🖨️</div>
+                    <div class="division-title">Office Equipment & IT</div>
+                    <div class="division-text">Printer repair, IT support, office supplies, and technology solutions to keep your business running efficiently</div>
+                    <a href="<?php echo home_url('/office-equipment'); ?>" class="division-cta">Explore Office Services →</a>
                 </div>
-                <div class="value-card">
-                    <div class="card-icon">🖨️</div>
-                    <div class="card-title">Office Equipment</div>
-                    <div class="card-text">Repairs, maintenance, supplies, and support for your office needs</div>
-                </div>
-                <div class="value-card">
-                    <div class="card-icon">🤝</div>
-                    <div class="card-title">Local Experts</div>
-                    <div class="card-text">Serving Vernon businesses with 40+ years combined experience</div>
+                <div class="division-card accounting-division">
+                    <div class="division-icon">📊</div>
+                    <div class="division-title">Accounting & Tax</div>
+                    <div class="division-text">Professional bookkeeping, tax preparation, and financial management to maximize your business success</div>
+                    <a href="<?php echo home_url('/accounting-services'); ?>" class="division-cta">Explore Accounting →</a>
                 </div>
             </div>
         </div>
@@ -164,53 +168,92 @@
 <section class="services" id="services">
     <div class="services-container">
         <div class="section-header">
-            <h2 class="section-title">Complete Business Solutions</h2>
-            <p class="section-subtitle">From financial management to office technology, we provide comprehensive services to support your business operations.</p>
+            <h2 class="section-title">Two Professional Divisions</h2>
+            <p class="section-subtitle">Equal expertise in office equipment services and accounting solutions - streamlining your business operations under one trusted partnership.</p>
         </div>
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-icon">📋</div>
-                <h3 class="service-title">Accounting & Bookkeeping</h3>
-                <p class="service-description">Accounting, bookkeeping and financial management to keep your business compliant and profitable.</p>
-                <ul class="service-features">
-                    <li>Monthly bookkeeping & reconciliation</li>
-                    <li>Year end preparation</li>
-                    <li>Payroll processing</li>
-                    <li>Small business consulting</li>
-                </ul>
+        <div class="divisions-grid">
+            <div class="division-service-card office-equipment">
+                <div class="division-header">
+                    <div class="division-service-icon">🖨️</div>
+                    <h3 class="division-service-title">Office Equipment & IT Services</h3>
+                    <p class="division-service-description">Complete office technology solutions to keep your business running efficiently and productively.</p>
+                </div>
+                <div class="service-categories">
+                    <div class="service-category">
+                        <h4 class="category-title">Equipment Services</h4>
+                        <ul class="category-features">
+                            <li>Printer & MFP repair</li>
+                            <li>Equipment maintenance</li>
+                            <li>New equipment sales</li>
+                            <li>Supplies & consumables</li>
+                        </ul>
+                    </div>
+                    <div class="service-category">
+                        <h4 class="category-title">IT Support</h4>
+                        <ul class="category-features">
+                            <li>Network troubleshooting</li>
+                            <li>System maintenance</li>
+                            <li>Technology consulting</li>
+                            <li>Remote support available</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="<?php echo home_url('/office-equipment'); ?>" class="division-service-cta">Learn More →</a>
             </div>
-            <div class="service-card">
-                <div class="service-icon">📄</div>
-                <h3 class="service-title">Tax Preparation</h3>
-                <p class="service-description">Maximize deductions and ensure compliance with expert tax services.</p>
-                <ul class="service-features">
-                    <li>Personal & corporate tax returns</li>
-                    <li>Tax planning & strategies</li>
-                    <li>CRA audit support</li>
-                    <li>GST and PST filing</li>
-                </ul>
+            <div class="division-service-card accounting-tax">
+                <div class="division-header">
+                    <div class="division-service-icon">📊</div>
+                    <h3 class="division-service-title">Accounting & Tax Services</h3>
+                    <p class="division-service-description">Professional financial management and tax preparation to maximize your business success and compliance.</p>
+                </div>
+                <div class="service-categories">
+                    <div class="service-category">
+                        <h4 class="category-title">Accounting & Bookkeeping</h4>
+                        <ul class="category-features">
+                            <li>Monthly bookkeeping & reconciliation</li>
+                            <li>Year end preparation</li>
+                            <li>Payroll processing</li>
+                            <li>Small business consulting</li>
+                        </ul>
+                    </div>
+                    <div class="service-category">
+                        <h4 class="category-title">Tax Preparation</h4>
+                        <ul class="category-features">
+                            <li>Personal & corporate tax returns</li>
+                            <li>Tax planning & strategies</li>
+                            <li>CRA audit support</li>
+                            <li>GST and PST filing</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="<?php echo home_url('/accounting-services'); ?>" class="division-service-cta">Learn More →</a>
             </div>
-            <div class="service-card">
-                <div class="service-icon">🔧</div>
-                <h3 class="service-title">Office Equipment Services</h3>
-                <p class="service-description">Keep your office running with our comprehensive equipment support.</p>
-                <ul class="service-features">
-                    <li>Printer & MFP repair</li>
-                    <li>Equipment maintenance</li>
-                    <li>Supplies & consumables</li>
-                    <li>New equipment sales</li>
-                </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Why Both Services Section -->
+<section class="why-both-services">
+    <div class="why-both-container">
+        <div class="section-header">
+            <h2 class="section-title">Why Both Services Together?</h2>
+            <p class="section-subtitle">The perfect synergy of office efficiency and financial management</p>
+        </div>
+        <div class="synergy-grid">
+            <div class="synergy-card">
+                <div class="synergy-icon">🔄</div>
+                <h3 class="synergy-title">Streamlined Operations</h3>
+                <p class="synergy-text">One trusted partner for all your office technology and financial management needs - simplifying vendor relationships and communication.</p>
             </div>
-            <div class="service-card">
-                <div class="service-icon">💻</div>
-                <h3 class="service-title">IT Support</h3>
-                <p class="service-description">Reliable technology support to keep your business connected and productive.</p>
-                <ul class="service-features">
-                    <li>Network troubleshooting</li>
-                    <li>System maintenance</li>
-                    <li>Technology consulting</li>
-                    <li>Remote support available</li>
-                </ul>
+            <div class="synergy-card">
+                <div class="synergy-icon">💰</div>
+                <h3 class="synergy-title">Cost Efficiency</h3>
+                <p class="synergy-text">Bundled services mean better value and coordinated support for your office equipment leases, maintenance, and related tax deductions.</p>
+            </div>
+            <div class="synergy-card">
+                <div class="synergy-icon">🎯</div>
+                <h3 class="synergy-title">Business Focus</h3>
+                <p class="synergy-text">While we handle your technology and finances, you can focus on what matters most - growing your business and serving your customers.</p>
             </div>
         </div>
     </div>
