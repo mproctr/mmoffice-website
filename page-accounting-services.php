@@ -99,7 +99,6 @@ Template Name: Accounting & Tax Services
         </div>
         <div class="accounting-grid">
             <div class="accounting-card">
-                <div class="accounting-icon">📋</div>
                 <h3 class="accounting-title">Monthly Bookkeeping</h3>
                 <p class="accounting-description">Accurate record-keeping and financial reporting for your business.</p>
                 <ul class="accounting-features">
@@ -111,7 +110,6 @@ Template Name: Accounting & Tax Services
                 </ul>
             </div>
             <div class="accounting-card">
-                <div class="accounting-icon">📈</div>
                 <h3 class="accounting-title">Year-End Preparation</h3>
                 <p class="accounting-description">Complete year-end services to prepare for tax season and beyond.</p>
                 <ul class="accounting-features">
@@ -123,7 +121,6 @@ Template Name: Accounting & Tax Services
                 </ul>
             </div>
             <div class="accounting-card">
-                <div class="accounting-icon">💼</div>
                 <h3 class="accounting-title">Payroll Processing</h3>
                 <p class="accounting-description">Complete payroll management including deductions and remittances.</p>
                 <ul class="accounting-features">
@@ -135,7 +132,6 @@ Template Name: Accounting & Tax Services
                 </ul>
             </div>
             <div class="accounting-card">
-                <div class="accounting-icon">🎯</div>
                 <h3 class="accounting-title">Business Consulting</h3>
                 <p class="accounting-description">Strategic financial guidance to help grow your business.</p>
                 <ul class="accounting-features">
@@ -159,7 +155,6 @@ Template Name: Accounting & Tax Services
         </div>
         <div class="tax-grid">
             <div class="tax-card">
-                <div class="tax-icon">📄</div>
                 <h3 class="tax-title">Personal Tax Returns</h3>
                 <p class="tax-description">Comprehensive personal tax preparation to maximize your refund.</p>
                 <ul class="tax-features">
@@ -171,7 +166,6 @@ Template Name: Accounting & Tax Services
                 </ul>
             </div>
             <div class="tax-card">
-                <div class="tax-icon">🏢</div>
                 <h3 class="tax-title">Corporate Tax Returns</h3>
                 <p class="tax-description">Expert corporate tax preparation for small and medium businesses.</p>
                 <ul class="tax-features">
@@ -183,7 +177,6 @@ Template Name: Accounting & Tax Services
                 </ul>
             </div>
             <div class="tax-card">
-                <div class="tax-icon">💡</div>
                 <h3 class="tax-title">Tax Planning</h3>
                 <p class="tax-description">Strategic planning to minimize taxes and maximize after-tax income.</p>
                 <ul class="tax-features">
@@ -195,7 +188,6 @@ Template Name: Accounting & Tax Services
                 </ul>
             </div>
             <div class="tax-card">
-                <div class="tax-icon">🛡️</div>
                 <h3 class="tax-title">CRA Support</h3>
                 <p class="tax-description">Professional support for CRA correspondence and audit situations.</p>
                 <ul class="tax-features">
@@ -221,15 +213,15 @@ Template Name: Accounting & Tax Services
                 <p class="expert-bio">With over 15 years of experience including public practice, Miles specializes in providing bookkeeping, accounting and tax preparation services to individuals, sole-proprietorships and small businesses. He provides accurate, compliant, and stress-free services, ensuring clients stay organized, maximize deductions, and maintain excellent relationships with the CRA while focusing on their business growth.</p>
                 <div class="expert-credentials">
                     <div class="credential">
-                        <span class="credential-icon">🎓</span>
+                        <span class="credential-icon"><i class="fas fa-user-graduate"></i></span>
                         <span class="credential-text">15+ Years Experience</span>
                     </div>
                     <div class="credential">
-                        <span class="credential-icon">📊</span>
+                        <span class="credential-icon"><i class="fas fa-chart-line"></i></span>
                         <span class="credential-text">Public Practice Background</span>
                     </div>
                     <div class="credential">
-                        <span class="credential-icon">✅</span>
+                        <span class="credential-icon"><i class="fas fa-shield-alt"></i></span>
                         <span class="credential-text">CRA Compliant Service</span>
                     </div>
                 </div>
@@ -252,21 +244,21 @@ Template Name: Accounting & Tax Services
         </div>
         <div class="contact-info">
             <div class="contact-item">
-                <div class="contact-icon">📞</div>
+                <div class="contact-icon"><i class="fas fa-phone"></i></div>
                 <div class="contact-label">Phone</div>
                 <div class="contact-value">
                     <a href="tel:250-307-1395">(250) 307-1395</a>
                 </div>
             </div>
             <div class="contact-item">
-                <div class="contact-icon">✉️</div>
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                 <div class="contact-label">Email</div>
                 <div class="contact-value">
                     <a href="mailto:info@mmoffice.ca">info@mmoffice.ca</a>
                 </div>
             </div>
             <div class="contact-item">
-                <div class="contact-icon">📍</div>
+                <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
                 <div class="contact-label">Serving</div>
                 <div class="contact-value">Vernon, BC & Area</div>
             </div>

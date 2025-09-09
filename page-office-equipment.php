@@ -99,7 +99,6 @@ Template Name: Office Equipment & IT Services
         </div>
         <div class="equipment-grid">
             <div class="equipment-card">
-                <div class="equipment-icon">🖨️</div>
                 <h3 class="equipment-title">Printer & MFP Repair</h3>
                 <p class="equipment-description">Expert repair services for all printer brands and multifunction devices.</p>
                 <ul class="equipment-features">
@@ -111,7 +110,6 @@ Template Name: Office Equipment & IT Services
                 </ul>
             </div>
             <div class="equipment-card">
-                <div class="equipment-icon">🔧</div>
                 <h3 class="equipment-title">Equipment Maintenance</h3>
                 <p class="equipment-description">Preventive maintenance programs to keep your equipment running smoothly.</p>
                 <ul class="equipment-features">
@@ -123,7 +121,6 @@ Template Name: Office Equipment & IT Services
                 </ul>
             </div>
             <div class="equipment-card">
-                <div class="equipment-icon">📦</div>
                 <h3 class="equipment-title">Office Supplies</h3>
                 <p class="equipment-description">Quality toner, ink cartridges, and office supplies at competitive prices.</p>
                 <ul class="equipment-features">
@@ -135,7 +132,6 @@ Template Name: Office Equipment & IT Services
                 </ul>
             </div>
             <div class="equipment-card">
-                <div class="equipment-icon">🛒</div>
                 <h3 class="equipment-title">New Equipment Sales</h3>
                 <p class="equipment-description">Find the right office equipment for your business needs and budget.</p>
                 <ul class="equipment-features">
@@ -159,7 +155,6 @@ Template Name: Office Equipment & IT Services
         </div>
         <div class="it-grid">
             <div class="it-card">
-                <div class="it-icon">🌐</div>
                 <h3 class="it-title">Network Support</h3>
                 <p class="it-description">Network setup, troubleshooting, and maintenance for reliable connectivity.</p>
                 <ul class="it-features">
@@ -171,7 +166,6 @@ Template Name: Office Equipment & IT Services
                 </ul>
             </div>
             <div class="it-card">
-                <div class="it-icon">💻</div>
                 <h3 class="it-title">System Maintenance</h3>
                 <p class="it-description">Keep your computers and systems running at peak performance.</p>
                 <ul class="it-features">
@@ -183,7 +177,6 @@ Template Name: Office Equipment & IT Services
                 </ul>
             </div>
             <div class="it-card">
-                <div class="it-icon">🎯</div>
                 <h3 class="it-title">Technology Consulting</h3>
                 <p class="it-description">Strategic guidance for your technology decisions and upgrades.</p>
                 <ul class="it-features">
@@ -195,7 +188,6 @@ Template Name: Office Equipment & IT Services
                 </ul>
             </div>
             <div class="it-card">
-                <div class="it-icon">📞</div>
                 <h3 class="it-title">Remote Support</h3>
                 <p class="it-description">Fast, convenient support without the need for on-site visits.</p>
                 <ul class="it-features">
@@ -221,15 +213,15 @@ Template Name: Office Equipment & IT Services
                 <p class="expert-bio">Marvin brings over 25 years of experience in repairing and maintaining office equipment, including printers, scanners, and IT systems. Whether troubleshooting complex issues, recommending new office technology, or providing ongoing support, Marvin delivers friendly service, quick response times and sound technical advice to keep Vernon businesses efficient and productive.</p>
                 <div class="expert-credentials">
                     <div class="credential">
-                        <span class="credential-icon">🎓</span>
+                        <span class="credential-icon"><i class="fas fa-user-graduate"></i></span>
                         <span class="credential-text">25+ Years Experience</span>
                     </div>
                     <div class="credential">
-                        <span class="credential-icon">🔧</span>
+                        <span class="credential-icon"><i class="fas fa-tools"></i></span>
                         <span class="credential-text">Multi-Brand Equipment Certified</span>
                     </div>
                     <div class="credential">
-                        <span class="credential-icon">⚡</span>
+                        <span class="credential-icon"><i class="fas fa-bolt"></i></span>
                         <span class="credential-text">Fast Response Times</span>
                     </div>
                 </div>
@@ -252,21 +244,21 @@ Template Name: Office Equipment & IT Services
         </div>
         <div class="contact-info">
             <div class="contact-item">
-                <div class="contact-icon">📞</div>
+                <div class="contact-icon"><i class="fas fa-phone"></i></div>
                 <div class="contact-label">Phone</div>
                 <div class="contact-value">
                     <a href="tel:250-307-1395">(250) 307-1395</a>
                 </div>
             </div>
             <div class="contact-item">
-                <div class="contact-icon">✉️</div>
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                 <div class="contact-label">Email</div>
                 <div class="contact-value">
                     <a href="mailto:info@mmoffice.ca">info@mmoffice.ca</a>
                 </div>
             </div>
             <div class="contact-item">
-                <div class="contact-icon">📍</div>
+                <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
                 <div class="contact-label">Serving</div>
                 <div class="contact-value">Vernon, BC & Area</div>
             </div>

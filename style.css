@@ -9,6 +9,8 @@ Version: 1.0.0
 
 /* Import fonts - Play for headings to match logo, Inter for body */
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Inter:wght@300;400;500;600;700;800&display=swap');
+/* Import Font Awesome for professional icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
 /* CSS Reset */
 * {
@@ -269,29 +271,47 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .division-card {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
     padding: 2rem;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+
+.division-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.division-card:hover::before {
+    opacity: 1;
 }
 
 .division-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    animation-play-state: paused;
 }
 
 .office-division {
-    border-left: 4px solid #ffffff;
-    box-shadow: -4px 0 0 #ffffff, 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid rgba(255, 255, 255, 0.4);
+    box-shadow: -4px 0 0 rgba(255, 255, 255, 0.4), 0 10px 30px rgba(0, 0, 0, 0.1);
     animation: float1 8s ease-in-out infinite;
 }
 
 .accounting-division {
-    border-left: 4px solid #ffffff;
-    box-shadow: -4px 0 0 #ffffff, 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid rgba(255, 255, 255, 0.4);
+    box-shadow: -4px 0 0 rgba(255, 255, 255, 0.4), 0 10px 30px rgba(0, 0, 0, 0.1);
     animation: float2 9.5s ease-in-out infinite;
 }
 
@@ -334,33 +354,36 @@ h1, h2, h3, h4, h5, h6 {
 .division-title {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #333;
+    color: white;
     margin-bottom: 1rem;
     font-family: 'Play', 'Inter', sans-serif;
 }
 
 .division-text {
-    color: #666;
+    color: rgba(255, 255, 255, 0.9);
     line-height: 1.6;
     margin-bottom: 1.5rem;
 }
 
 .division-cta {
     display: inline-block;
-    color: #14b8a6;
-    font-weight: 600;
+    color: white;
+    font-weight: 700;
     text-decoration: none;
     transition: all 0.3s ease;
-    border-bottom: 2px solid transparent;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .accounting-division .division-cta {
-    color: #0891b2;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .division-cta:hover {
-    border-bottom-color: currentColor;
+    border-bottom-color: white;
     transform: translateX(5px);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .hero-content {
@@ -768,6 +791,11 @@ h1, h2, h3, h4, h5, h6 {
     gap: 1.5rem;
 }
 
+/* Add consistent spacing above service highlights on landing pages */
+.landing-hero .service-highlights {
+    margin-top: 3rem;
+}
+
 .highlight-card {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
@@ -964,6 +992,18 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
+
+/* SVG Icons for Service Cards */
+.svg-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1.5rem;
+    fill: currentColor;
+}
+
+.svg-icon.teal { color: #14b8a6; }
+.svg-icon.blue { color: #0891b2; }
+.svg-icon.dark-blue { color: #0284c7; }
 
 /* Landing Page CTA */
 .landing-cta {
@@ -1183,6 +1223,11 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #14b8a6;
+}
+
+/* White contact icons on landing page dark backgrounds */
+.landing-cta .contact-icon {
+    color: white;
 }
 
 .contact-label {

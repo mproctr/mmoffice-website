@@ -138,7 +138,7 @@
 <section class="hero">
     <div class="hero-container">
         <div class="hero-content">
-            <h1 class="hero-title">Two Divisions, One Trusted Partner</h1>
+            <h1 class="hero-title">Vernon's Trusted Accounting & Office Technology Experts</h1>
             <p class="hero-subtitle">Complete business solutions for Vernon companies - professional office equipment services and expert accounting support under one roof.</p>
             <div class="hero-buttons">
                 <a href="#contact" class="btn-primary">Get Started Today</a>
@@ -150,14 +150,14 @@
                 <div class="division-card office-division">
                     <div class="division-icon">🖨️</div>
                     <div class="division-title">Office Equipment & IT</div>
-                    <div class="division-text">Printer repair, IT support, office supplies, and technology solutions to keep your business running efficiently</div>
+                    <div class="division-text">Expert repair for all major printer brands, IT troubleshooting, network setup, and office supplies. Your technical partner for a productive workspace.</div>
                     <a href="<?php echo home_url('/office-equipment'); ?>" class="division-cta">Explore Office Services →</a>
                 </div>
                 <div class="division-card accounting-division">
                     <div class="division-icon">📊</div>
                     <div class="division-title">Accounting & Tax</div>
-                    <div class="division-text">Professional bookkeeping, tax preparation, and financial management to maximize your business success</div>
-                    <a href="<?php echo home_url('/accounting-services'); ?>" class="division-cta">Explore Accounting →</a>
+                    <div class="division-text">Complete accounting and bookkeeping services, year-end preparation, and tax filing. Your financial partner for a profitable business.</div>
+                    <a href="<?php echo home_url('/accounting-services'); ?>" class="division-cta">Explore Accounting Services →</a>
                 </div>
             </div>
         </div>
@@ -312,21 +312,21 @@
         <!-- Contact Information -->
         <div class="contact-info">
             <div class="contact-item">
-                <div class="contact-icon">📞</div>
+                <div class="contact-icon"><i class="fas fa-phone"></i></div>
                 <div class="contact-label">Phone</div>
                 <div class="contact-value">
                     <a href="tel:250-307-1395">(250) 307-1395</a>
                 </div>
             </div>
             <div class="contact-item">
-                <div class="contact-icon">✉️</div>
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                 <div class="contact-label">Email</div>
                 <div class="contact-value">
                     <a href="mailto:info@mmoffice.ca">info@mmoffice.ca</a>
                 </div>
             </div>
             <div class="contact-item">
-                <div class="contact-icon">📍</div>
+                <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
                 <div class="contact-label">Location</div>
                 <div class="contact-value">Vernon, BC</div>
             </div>
