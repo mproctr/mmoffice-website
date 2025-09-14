@@ -1484,6 +1484,34 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+/* Tablet breakpoint for services section */
+@media screen and (max-width: 900px) {
+    .divisions-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+    
+    .division-service-card {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .service-categories {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    
+    /* Why Both Services - 2 columns on tablet */
+    .synergy-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .synergy-card {
+        padding: 2rem 1.5rem;
+    }
+}
+
 /* Medium screen breakpoint - hide desktop nav earlier to prevent wrapping */
 @media screen and (max-width: 1300px) {
     .nav-links {
@@ -1590,6 +1618,42 @@ h1, h2, h3, h4, h5, h6 {
     .services-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+    }
+    
+    /* Services Section - Stack divisions on mobile */
+    .divisions-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .division-service-card {
+        padding: 2rem;
+    }
+    
+    .service-categories {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    /* Why Both Services - Single column on mobile */
+    .synergy-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+    
+    .synergy-card {
+        padding: 2rem 1.5rem;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .synergy-icon {
+        font-size: 2.5rem;
+    }
+    
+    .synergy-title {
+        font-size: 1.2rem;
     }
 
     .section-title {
