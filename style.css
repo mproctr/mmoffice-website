@@ -12,6 +12,37 @@ Version: 1.0.0
 /* Import Font Awesome for professional icons */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
+/* Lucide SVG styling */
+.lucide-icon {
+    display: inline-block;
+    vertical-align: middle;
+    flex-shrink: 0;
+}
+
+.division-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.division-icon .lucide-icon {
+    width: 48px;
+    height: 48px;
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1));
+    stroke-width: 2;
+}
+
+.division-service-icon .lucide-icon,
+.highlight-icon .lucide-icon,
+.synergy-icon .lucide-icon {
+    width: 40px;
+    height: 40px;
+}
+
 /* CSS Reset */
 * {
     margin: 0;
@@ -260,7 +291,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 2;
     min-height: 100vh;
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 /* Service Divisions in Hero */

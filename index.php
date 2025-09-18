@@ -148,13 +148,13 @@
         <div class="hero-visual">
             <div class="service-divisions">
                 <div class="division-card office-division">
-                    <div class="division-icon">🖨️</div>
+                    <div class="division-icon"><?php echo get_svg_icon('printer', '#14b8a6', '32'); ?></div>
                     <div class="division-title">Office Equipment & IT</div>
                     <div class="division-text">Expert repair for all major printer brands, IT troubleshooting, network setup, and office supplies. Your technical partner for a productive workspace.</div>
                     <a href="<?php echo home_url('/office-equipment'); ?>" class="division-cta">Explore Office Services →</a>
                 </div>
                 <div class="division-card accounting-division">
-                    <div class="division-icon">📊</div>
+                    <div class="division-icon"><?php echo get_svg_icon('calculator', '#0891b2', '32'); ?></div>
                     <div class="division-title">Accounting & Tax</div>
                     <div class="division-text">Complete accounting and bookkeeping services, year-end preparation, and tax filing. Your financial partner for a profitable business.</div>
                     <a href="<?php echo home_url('/accounting-services'); ?>" class="division-cta">Explore Accounting Services →</a>
@@ -174,7 +174,7 @@
         <div class="divisions-grid">
             <div class="division-service-card office-equipment">
                 <div class="division-header">
-                    <div class="division-service-icon">🖨️</div>
+                    <div class="division-service-icon"><?php echo get_svg_icon('printer', '#14b8a6', '24'); ?></div>
                     <h3 class="division-service-title">Office Equipment & IT Services</h3>
                     <p class="division-service-description">Complete office technology solutions to keep your business running efficiently and productively.</p>
                 </div>
@@ -202,7 +202,7 @@
             </div>
             <div class="division-service-card accounting-tax">
                 <div class="division-header">
-                    <div class="division-service-icon">📊</div>
+                    <div class="division-service-icon"><?php echo get_svg_icon('calculator', '#0891b2', '24'); ?></div>
                     <h3 class="division-service-title">Accounting & Tax Services</h3>
                     <p class="division-service-description">Professional financial management and tax preparation to maximize your business success and compliance.</p>
                 </div>
@@ -241,17 +241,17 @@
         </div>
         <div class="synergy-grid">
             <div class="synergy-card">
-                <div class="synergy-icon">🔄</div>
+                <div class="synergy-icon"><?php echo get_svg_icon('refresh-ccw-dot', '#0284c7', '24'); ?></div>
                 <h3 class="synergy-title">Streamlined Operations</h3>
                 <p class="synergy-text">One trusted partner for all your office technology and financial management needs - simplifying vendor relationships and communication.</p>
             </div>
             <div class="synergy-card">
-                <div class="synergy-icon">💰</div>
+                <div class="synergy-icon"><?php echo get_svg_icon('dollar-sign', '#0284c7', '24'); ?></div>
                 <h3 class="synergy-title">Cost Efficiency</h3>
                 <p class="synergy-text">Bundled services mean better value and coordinated support for your office equipment leases, maintenance, and related tax deductions.</p>
             </div>
             <div class="synergy-card">
-                <div class="synergy-icon">🎯</div>
+                <div class="synergy-icon"><?php echo get_svg_icon('square-mouse-pointer', '#0284c7', '24'); ?></div>
                 <h3 class="synergy-title">Business Focus</h3>
                 <p class="synergy-text">While we handle your technology and finances, you can focus on what matters most - growing your business and serving your customers.</p>
             </div>

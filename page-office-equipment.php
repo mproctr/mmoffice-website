@@ -71,17 +71,17 @@ Template Name: Office Equipment & IT Services
         <div class="landing-hero-visual">
             <div class="service-highlights">
                 <div class="highlight-card">
-                    <div class="highlight-icon">⚡</div>
+                    <div class="highlight-icon"><?php echo get_svg_icon('zap', '#14b8a6', '24'); ?></div>
                     <div class="highlight-title">Fast Response</div>
                     <div class="highlight-text">Quick turnaround on repairs and support requests</div>
                 </div>
                 <div class="highlight-card">
-                    <div class="highlight-icon">🔧</div>
+                    <div class="highlight-icon"><?php echo get_svg_icon('wrench', '#14b8a6', '24'); ?></div>
                     <div class="highlight-title">Expert Service</div>
                     <div class="highlight-text">25+ years of office equipment experience</div>
                 </div>
                 <div class="highlight-card">
-                    <div class="highlight-icon">📍</div>
+                    <div class="highlight-icon"><?php echo get_svg_icon('map-pin', '#14b8a6', '24'); ?></div>
                     <div class="highlight-title">Local Support</div>
                     <div class="highlight-text">Vernon-based service you can trust</div>
                 </div>

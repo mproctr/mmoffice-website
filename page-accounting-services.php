@@ -71,17 +71,17 @@ Template Name: Accounting & Tax Services
         <div class="landing-hero-visual">
             <div class="service-highlights">
                 <div class="highlight-card">
-                    <div class="highlight-icon">📊</div>
+                    <div class="highlight-icon"><?php echo get_svg_icon('calculator', '#0891b2', '24'); ?></div>
                     <div class="highlight-title">Expert Knowledge</div>
                     <div class="highlight-text">15+ years of accounting and tax expertise</div>
                 </div>
                 <div class="highlight-card">
-                    <div class="highlight-icon">💰</div>
+                    <div class="highlight-icon"><?php echo get_svg_icon('dollar-sign', '#0891b2', '24'); ?></div>
                     <div class="highlight-title">Maximize Savings</div>
                     <div class="highlight-text">Find every deduction you're entitled to</div>
                 </div>
                 <div class="highlight-card">
-                    <div class="highlight-icon">✅</div>
+                    <div class="highlight-icon"><?php echo get_svg_icon('circle-check-big', '#0891b2', '24'); ?></div>
                     <div class="highlight-title">CRA Compliant</div>
                     <div class="highlight-text">Accurate, compliant, stress-free service</div>
                 </div>
