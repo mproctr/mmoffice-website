@@ -100,7 +100,7 @@ Template Name: Office Equipment & IT Services
         <div class="equipment-grid">
             <div class="equipment-card">
                 <h3 class="equipment-title">Printer & MFP Repair</h3>
-                <p class="equipment-description">Expert repair services for all printer brands and multifunction devices.</p>
+                <p class="equipment-description">Expert repair services for Epson, KonicaMinolta, Canon, Ricoh, HP, Lexmark, Sharp, Kyocera, Toshiba, and Brother printers and multifunction devices.</p>
                 <ul class="equipment-features">
                     <li>Laser and inkjet printer repair</li>
                     <li>Multifunction device service</li>
@@ -122,13 +122,13 @@ Template Name: Office Equipment & IT Services
             </div>
             <div class="equipment-card">
                 <h3 class="equipment-title">Office Supplies</h3>
-                <p class="equipment-description">Quality toner, ink cartridges, and office supplies at competitive prices.</p>
+                <p class="equipment-description">Quality toner cartridges and office supplies - our main sales focus with competitive pricing.</p>
                 <ul class="equipment-features">
                     <li>OEM and compatible toner cartridges</li>
-                    <li>Ink cartridges for all printer types</li>
-                    <li>Paper and office supplies</li>
+                    <li>Regular stock of frequently-used cartridges</li>
+                    <li>Paper and office supplies available</li>
                     <li>Bulk ordering discounts</li>
-                    <li>Delivery service available</li>
+                    <li>Local delivery service</li>
                 </ul>
             </div>
             <div class="equipment-card">
@@ -156,35 +156,35 @@ Template Name: Office Equipment & IT Services
         <div class="it-grid">
             <div class="it-card">
                 <h3 class="it-title">Network Support</h3>
-                <p class="it-description">Network setup, troubleshooting, and maintenance for reliable connectivity.</p>
+                <p class="it-description">Troubleshooting and maintenance for existing network setups and connectivity issues.</p>
                 <ul class="it-features">
                     <li>Network troubleshooting and repair</li>
-                    <li>Router and switch configuration</li>
-                    <li>Wireless network optimization</li>
-                    <li>Network security assessment</li>
-                    <li>Internet connectivity issues</li>
+                    <li>Printer connectivity to existing networks</li>
+                    <li>Wireless connection problems</li>
+                    <li>Internet connectivity troubleshooting</li>
+                    <li>Basic router and switch support</li>
                 </ul>
             </div>
             <div class="it-card">
                 <h3 class="it-title">System Maintenance</h3>
-                <p class="it-description">Keep your computers and systems running at peak performance.</p>
+                <p class="it-description">Basic computer troubleshooting and maintenance to keep systems running smoothly.</p>
                 <ul class="it-features">
-                    <li>Computer tune-ups and optimization</li>
-                    <li>Software updates and patches</li>
-                    <li>Virus removal and protection</li>
-                    <li>Data backup solutions</li>
+                    <li>Computer troubleshooting</li>
+                    <li>Software problem resolution</li>
+                    <li>Basic virus removal</li>
+                    <li>Printer driver installation</li>
                     <li>Hardware diagnostics</li>
                 </ul>
             </div>
             <div class="it-card">
                 <h3 class="it-title">Technology Consulting</h3>
-                <p class="it-description">Strategic guidance for your technology decisions and upgrades.</p>
+                <p class="it-description">Practical advice for office technology decisions and equipment selection.</p>
                 <ul class="it-features">
-                    <li>Technology needs assessment</li>
-                    <li>Upgrade recommendations</li>
-                    <li>Cost-benefit analysis</li>
-                    <li>Implementation planning</li>
-                    <li>Best practices guidance</li>
+                    <li>Office equipment recommendations</li>
+                    <li>Printer selection guidance</li>
+                    <li>Cost-effective solutions</li>
+                    <li>Equipment compatibility advice</li>
+                    <li>Practical technology guidance</li>
                 </ul>
             </div>
             <div class="it-card">

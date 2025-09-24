@@ -95,7 +95,7 @@ Template Name: Accounting & Tax Services
     <div class="services-container">
         <div class="section-header">
             <h2 class="section-title">Accounting & Bookkeeping Services</h2>
-            <p class="section-subtitle">Professional financial management to keep your business compliant and profitable</p>
+            <p class="section-subtitle">Professional financial management for businesses of all sizes - from sole proprietors to mid-sized companies</p>
         </div>
         <div class="accounting-grid">
             <div class="accounting-card">
@@ -122,13 +122,13 @@ Template Name: Accounting & Tax Services
             </div>
             <div class="accounting-card">
                 <h3 class="accounting-title">Payroll Processing</h3>
-                <p class="accounting-description">Complete payroll management including deductions and remittances.</p>
+                <p class="accounting-description">Complete payroll management including deductions and remittances, with recommendations for dedicated payroll services for larger clients.</p>
                 <ul class="accounting-features">
                     <li>Employee pay calculations</li>
                     <li>Tax deductions and benefits</li>
-                    <li>CPP, EI, and tax remittances</li>
+                    <li>CPP, EI, and tax remittances to CRA</li>
                     <li>T4 slip preparation</li>
-                    <li>Workers' compensation reporting</li>
+                    <li>Integration with existing payroll schedules</li>
                 </ul>
             </div>
             <div class="accounting-card">
@@ -167,12 +167,12 @@ Template Name: Accounting & Tax Services
             </div>
             <div class="tax-card">
                 <h3 class="tax-title">Corporate Tax Returns</h3>
-                <p class="tax-description">Expert corporate tax preparation for small and medium businesses.</p>
+                <p class="tax-description">T2 corporate tax preparation focused on straightforward CCPC returns for incorporated professionals and small businesses.</p>
                 <ul class="tax-features">
-                    <li>T2 corporate tax returns</li>
+                    <li>T2 corporate tax returns (CCPC focus)</li>
                     <li>Small business deduction optimization</li>
                     <li>Capital cost allowance planning</li>
-                    <li>Inter-corporate transactions</li>
+                    <li>Simple corporate structures</li>
                     <li>Provincial tax compliance</li>
                 </ul>
             </div>
@@ -189,13 +189,13 @@ Template Name: Accounting & Tax Services
             </div>
             <div class="tax-card">
                 <h3 class="tax-title">CRA Support</h3>
-                <p class="tax-description">Professional support for CRA correspondence and audit situations.</p>
+                <p class="tax-description">Experienced CRA representation and support with proven success in audit situations.</p>
                 <ul class="tax-features">
-                    <li>CRA audit representation</li>
+                    <li>CRA audit representation with successful track record</li>
                     <li>Notice of assessment reviews</li>
-                    <li>Voluntary disclosure programs</li>
-                    <li>Payment arrangement negotiations</li>
-                    <li>GST/HST compliance support</li>
+                    <li>CRA correspondence handling</li>
+                    <li>GST and BC PST compliance support</li>
+                    <li>Information returns (T4/T4A/T5/T5018)</li>
                 </ul>
             </div>
         </div>
