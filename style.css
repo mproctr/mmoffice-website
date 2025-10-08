@@ -973,10 +973,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .expert-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 4rem;
-    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .expert-title {
@@ -985,6 +983,25 @@ h1, h2, h3, h4, h5, h6 {
     color: #1e293b;
     margin-bottom: 2rem;
     font-family: 'Play', 'Inter', sans-serif;
+}
+
+.expert-header {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.expert-photo {
+    flex-shrink: 0;
+}
+
+.expert-photo img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .expert-name {
@@ -1002,7 +1019,7 @@ h1, h2, h3, h4, h5, h6 {
 .expert-role {
     font-size: 1.2rem;
     color: #64748b;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
     font-weight: 600;
 }
 
@@ -1031,18 +1048,6 @@ h1, h2, h3, h4, h5, h6 {
 .credential-text {
     color: #475569;
     font-weight: 500;
-}
-
-.expert-photo {
-    text-align: center;
-}
-
-.expert-photo img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 /* SVG Icons for Service Cards */
@@ -1720,6 +1725,37 @@ h1, h2, h3, h4, h5, h6 {
     .services-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+    }
+
+    /* Expert section mobile layout */
+    .expert-title {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .expert-header {
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .expert-photo img {
+        width: 100px;
+        height: 100px;
+        border-radius: 15px;
+    }
+
+    .expert-name {
+        font-size: 1.5rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .expert-role {
+        font-size: 1rem;
+    }
+
+    .expert-bio {
+        text-align: left;
+        font-size: 0.95rem;
     }
 
     /* Services Section - Stack divisions on mobile */

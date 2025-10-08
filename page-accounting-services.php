@@ -279,8 +279,15 @@ Template Name: Accounting & Tax Services
         <div class="expert-content">
             <div class="expert-info">
                 <h2 class="expert-title">Meet Your Accounting & Tax Expert</h2>
-                <h3 class="expert-name">Miles Procter</h3>
-                <p class="expert-role">Accountant & Tax Specialist</p>
+                <div class="expert-header">
+                    <div class="expert-photo">
+                        <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/miles-headshot.jpg" alt="Miles Procter - Accounting Expert" />
+                    </div>
+                    <div class="expert-name-title">
+                        <h3 class="expert-name">Miles Procter</h3>
+                        <p class="expert-role">Accountant & Tax Specialist</p>
+                    </div>
+                </div>
                 <p class="expert-bio">With over 15 years of experience including public practice, Miles specializes in providing bookkeeping, accounting and tax preparation services to individuals, sole-proprietorships and small businesses. He provides accurate, compliant, and stress-free services, ensuring clients stay organized, maximize deductions, and maintain excellent relationships with the CRA while focusing on their business growth.</p>
                 <div class="expert-credentials">
                     <div class="credential">
@@ -296,9 +303,6 @@ Template Name: Accounting & Tax Services
                         <span class="credential-text">CRA Compliant Service</span>
                     </div>
                 </div>
-            </div>
-            <div class="expert-photo">
-                <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/miles-headshot.jpg" alt="Miles Procter - Accounting Expert" />
             </div>
         </div>
     </div>

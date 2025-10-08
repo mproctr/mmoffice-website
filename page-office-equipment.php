@@ -279,8 +279,15 @@ Template Name: Office Equipment & IT Services
         <div class="expert-content">
             <div class="expert-info">
                 <h2 class="expert-title">Meet Your Equipment & IT Expert</h2>
-                <h3 class="expert-name">Marvin Barclay</h3>
-                <p class="expert-role">Office Equipment & IT Support Specialist</p>
+                <div class="expert-header">
+                    <div class="expert-photo">
+                        <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/marvin-headshot.jpg" alt="Marvin Barclay - Office Equipment Expert" />
+                    </div>
+                    <div class="expert-name-title">
+                        <h3 class="expert-name">Marvin Barclay</h3>
+                        <p class="expert-role">Office Equipment & IT Support Specialist</p>
+                    </div>
+                </div>
                 <p class="expert-bio">Marvin brings over 25 years of experience in repairing and maintaining office equipment, including printers, scanners, and IT systems. Whether troubleshooting complex issues, recommending new office technology, or providing ongoing support, Marvin delivers friendly service, quick response times and sound technical advice to keep Vernon businesses efficient and productive.</p>
                 <div class="expert-credentials">
                     <div class="credential">
@@ -296,9 +303,6 @@ Template Name: Office Equipment & IT Services
                         <span class="credential-text">Fast Response Times</span>
                     </div>
                 </div>
-            </div>
-            <div class="expert-photo">
-                <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/marvin-headshot.jpg" alt="Marvin Barclay - Office Equipment Expert" />
             </div>
         </div>
     </div>
