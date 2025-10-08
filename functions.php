@@ -7,9 +7,12 @@
 function mmoffice_child_styles() {
     // Parent theme style
     wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
-    
+
     // Child theme style (loads after parent for proper overrides)
     wp_enqueue_style('child-style', get_stylesheet_directory_uri() . '/style.css', array('parent-style'));
+
+    // Enqueue main JavaScript file
+    wp_enqueue_script('mmoffice-main-js', get_template_directory_uri() . '/scripts.js', array(), '1.0.0', true);
 }
 add_action('wp_enqueue_scripts', 'mmoffice_child_styles');
 

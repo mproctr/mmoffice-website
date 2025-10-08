@@ -7,10 +7,25 @@ Description: Custom theme for M&M Office Solutions
 Version: 1.0.0
 */
 
-/* Import fonts - Play for headings to match logo, Inter for body */
-@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Inter:wght@300;400;500;600;700;800&display=swap');
-/* Import Font Awesome for professional icons */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+/* Fonts are loaded via <link> tags in HTML head for better performance */
+
+/* Skip to content link for accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #14b8a6;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    z-index: 10000;
+    font-weight: 600;
+    border-radius: 0 0 8px 0;
+}
+
+.skip-link:focus {
+    top: 0;
+}
 
 /* Lucide SVG styling */
 .lucide-icon {
@@ -262,7 +277,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, #14b8a6 0%, #0891b2 50%, #0284c7 100%);
-    min-height: 100vh;
+    min-height: auto;
     display: flex;
     align-items: center;
     position: relative;
@@ -282,16 +297,14 @@ h1, h2, h3, h4, h5, h6 {
 .hero-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 120px 2rem 3rem 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
     position: relative;
     z-index: 2;
-    min-height: 100vh;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    min-height: auto;
 }
 
 /* Service Divisions in Hero */
@@ -778,11 +791,12 @@ h1, h2, h3, h4, h5, h6 {
 /* Landing Page Styles */
 .landing-hero {
     background: linear-gradient(135deg, #14b8a6 0%, #0891b2 50%, #0284c7 100%);
-    min-height: 100vh;
+    min-height: auto;
     display: flex;
     align-items: center;
     position: relative;
     overflow: hidden;
+    padding-top: 90px;
 }
 
 .accounting-hero {
@@ -792,11 +806,12 @@ h1, h2, h3, h4, h5, h6 {
 .landing-hero-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 4rem 2rem;
+    padding: 2rem 2rem 3rem 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
+    min-height: auto;
 }
 
 .landing-hero-title {
@@ -820,11 +835,6 @@ h1, h2, h3, h4, h5, h6 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
-}
-
-/* Add consistent spacing above service highlights on landing pages */
-.landing-hero .service-highlights {
-    margin-top: 3rem;
 }
 
 .highlight-card {
@@ -1432,10 +1442,21 @@ h1, h2, h3, h4, h5, h6 {
 .contact-info .contact-value a {
     color: inherit;
     text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 .contact-info .contact-value a:hover {
     color: #14b8a6;
+}
+
+/* Better contrast for landing page contact links */
+.landing-cta .contact-value a {
+    color: white;
+}
+
+.landing-cta .contact-value a:hover {
+    color: white;
+    text-decoration: underline;
 }
 
 /* WPForms Success Message Styling */
@@ -1574,11 +1595,24 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+/* Larger phones - 2 column service categories */
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .service-categories {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .equipment-grid, .accounting-grid, .tax-grid, .it-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .navbar {
         padding: 0.5rem 0;
     }
-    
+
     .nav-container {
         max-width: none;
         margin: 0;
@@ -1589,34 +1623,34 @@ h1, h2, h3, h4, h5, h6 {
         padding: 0 1rem;
         gap: 2rem;
     }
-    
+
     .hamburger {
         display: flex;
         margin-right: 0;
     }
-    
+
     .logo {
         height: 35px;
         margin: 0;
         margin-right: auto;
     }
-    
+
     .logo img {
         height: 30px;
     }
-    
+
     .nav-links {
         display: none;
     }
-    
+
     .mobile-menu {
         display: block;
     }
-    
+
     .mobile-nav-links {
         display: flex;
     }
-    
+
     .cta-button {
         font-size: 0.8rem;
         padding: 0.5rem 1rem;
@@ -1645,22 +1679,23 @@ h1, h2, h3, h4, h5, h6 {
         width: 300px;
         margin: 0 auto;
     }
-    
+
     .services-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-    
+
     /* Services Section - Stack divisions on mobile */
     .divisions-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+
     .division-service-card {
         padding: 2rem;
     }
-    
+
+    /* Single column on small phones only */
     .service-categories {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -1706,7 +1741,9 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .btn-primary, .btn-secondary {
-        width: 200px;
+        min-width: 200px;
+        width: auto;
+        max-width: 280px;
         text-align: center;
     }
 

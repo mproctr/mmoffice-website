@@ -11,7 +11,75 @@ Template Name: Office Equipment & IT Services
     
     <title>Office Equipment & IT Services | M&M Office Solutions - Vernon BC</title>
     <meta name="description" content="Expert office equipment repair, IT support, and technology solutions in Vernon, BC. Printer repair, network support, office supplies, and maintenance services.">
-    
+
+    <!-- Preconnect for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Service Schema for Office Equipment -->
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Office Equipment & IT Services",
+    "provider": {
+        "@type": "LocalBusiness",
+        "name": "M&M Office Solutions",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Vernon",
+            "addressRegion": "BC",
+            "addressCountry": "CA"
+        },
+        "telephone": "+1-250-307-1395",
+        "email": "info@mmoffice.ca",
+        "url": "<?php echo home_url('/office-equipment'); ?>"
+    },
+    "description": "Complete office equipment repair, IT support, and technology solutions for Vernon businesses. Expert printer repair, network troubleshooting, and office supplies.",
+    "areaServed": {
+        "@type": "City",
+        "name": "Vernon",
+        "containedIn": {
+            "@type": "State",
+            "name": "British Columbia"
+        }
+    },
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Office Equipment Services",
+        "itemListElement": [
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Printer & MFP Repair",
+                    "description": "Expert repair for Epson, KonicaMinolta, Canon, Ricoh, HP, Lexmark, Sharp, Kyocera, Toshiba, and Brother printers"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "IT Support Services",
+                    "description": "Network troubleshooting, system maintenance, and technology consulting"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Product",
+                    "name": "Office Supplies",
+                    "description": "OEM and compatible toner cartridges, paper, and office supplies"
+                }
+            }
+        ]
+    }
+}
+</script>
+
     <!-- WordPress head -->
     <?php wp_head(); ?>
     
@@ -20,6 +88,9 @@ Template Name: Office Equipment & IT Services
 </head>
 
 <body <?php body_class(); ?>>
+
+<!-- Skip to main content for accessibility -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
 <!-- Navigation -->
 <nav class="navbar">
@@ -58,7 +129,7 @@ Template Name: Office Equipment & IT Services
 </div>
 
 <!-- Landing Page Hero -->
-<section class="landing-hero office-hero">
+<section class="landing-hero office-hero" id="main-content">
     <div class="landing-hero-container">
         <div class="landing-hero-content">
             <h1 class="landing-hero-title">Office Equipment & IT Services</h1>
@@ -161,17 +232,17 @@ Template Name: Office Equipment & IT Services
                     <li>Network troubleshooting and repair</li>
                     <li>Printer connectivity to existing networks</li>
                     <li>Wireless connection problems</li>
-                    <li>Internet connectivity troubleshooting</li>
+                    <li>Wi-Fi network optimization</li>
                     <li>Basic router and switch support</li>
                 </ul>
             </div>
             <div class="it-card">
                 <h3 class="it-title">System Maintenance</h3>
-                <p class="it-description">Basic computer troubleshooting and maintenance to keep systems running smoothly.</p>
+                <p class="it-description">Computer troubleshooting and maintenance to keep systems running smoothly.</p>
                 <ul class="it-features">
-                    <li>Computer troubleshooting</li>
+                    <li>Desktop and laptop troubleshooting</li>
                     <li>Software problem resolution</li>
-                    <li>Basic virus removal</li>
+                    <li>Virus and malware removal</li>
                     <li>Printer driver installation</li>
                     <li>Hardware diagnostics</li>
                 </ul>
@@ -180,11 +251,11 @@ Template Name: Office Equipment & IT Services
                 <h3 class="it-title">Technology Consulting</h3>
                 <p class="it-description">Practical advice for office technology decisions and equipment selection.</p>
                 <ul class="it-features">
-                    <li>Office equipment recommendations</li>
-                    <li>Printer selection guidance</li>
-                    <li>Cost-effective solutions</li>
-                    <li>Equipment compatibility advice</li>
-                    <li>Practical technology guidance</li>
+                    <li>Technology needs assessment</li>
+                    <li>Printer and equipment selection guidance</li>
+                    <li>Cost-benefit analysis and budgeting</li>
+                    <li>Vendor comparison and recommendations</li>
+                    <li>Integration with existing systems</li>
                 </ul>
             </div>
             <div class="it-card">
@@ -194,7 +265,7 @@ Template Name: Office Equipment & IT Services
                     <li>Remote troubleshooting</li>
                     <li>Software installation and updates</li>
                     <li>Configuration assistance</li>
-                    <li>Quick response times</li>
+                    <li>No travel time or costs</li>
                     <li>Screen sharing support</li>
                 </ul>
             </div>
@@ -270,50 +341,6 @@ Template Name: Office Equipment & IT Services
 <div class="copyright-footer">
     © <?php echo date('Y'); ?> M&M Office Solutions. All rights reserved.
 </div>
-
-<script>
-    // Hamburger menu functionality
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobileMenu');
-    
-    function toggleMobileMenu() {
-        hamburger.classList.toggle('active');
-        mobileMenu.classList.toggle('active');
-        
-        // Prevent body scrolling when menu is open
-        if (mobileMenu.classList.contains('active')) {
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.body.style.overflow = '';
-        }
-    }
-    
-    function closeMobileMenu() {
-        hamburger.classList.remove('active');
-        mobileMenu.classList.remove('active');
-        document.body.style.overflow = '';
-    }
-    
-    hamburger.addEventListener('click', toggleMobileMenu);
-    
-    mobileMenu.addEventListener('click', function(e) {
-        if (e.target === mobileMenu) {
-            closeMobileMenu();
-        }
-    });
-    
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
-            closeMobileMenu();
-        }
-    });
-
-    window.addEventListener('resize', function() {
-        if (window.innerWidth > 768 && mobileMenu.classList.contains('active')) {
-            closeMobileMenu();
-        }
-    });
-</script>
 
 <?php wp_footer(); ?>
 </body>

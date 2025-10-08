@@ -10,8 +10,76 @@ Template Name: Accounting & Tax Services
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
     <title>Accounting & Tax Services | M&M Office Solutions - Vernon BC</title>
-    <meta name="description" content="Professional accounting, bookkeeping, and tax preparation services in Vernon, BC. Expert financial management for individuals and small businesses.">
-    
+    <meta name="description" content="Expert accounting, bookkeeping, and tax preparation services in Vernon, BC. Professional financial management for individuals and small businesses.">
+
+    <!-- Preconnect for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Service Schema for Accounting -->
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": ["AccountingService", "TaxPreparationService"],
+    "serviceType": "Accounting & Tax Services",
+    "provider": {
+        "@type": "LocalBusiness",
+        "name": "M&M Office Solutions",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Vernon",
+            "addressRegion": "BC",
+            "addressCountry": "CA"
+        },
+        "telephone": "+1-250-307-1395",
+        "email": "info@mmoffice.ca",
+        "url": "<?php echo home_url('/accounting-services'); ?>"
+    },
+    "description": "Expert accounting, bookkeeping, and tax preparation services for Vernon individuals and small businesses. Professional financial management and CRA compliance.",
+    "areaServed": {
+        "@type": "City",
+        "name": "Vernon",
+        "containedIn": {
+            "@type": "State",
+            "name": "British Columbia"
+        }
+    },
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Accounting & Tax Services",
+        "itemListElement": [
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Bookkeeping & Accounting",
+                    "description": "Monthly bookkeeping, reconciliation, year-end preparation, and payroll processing"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Tax Preparation",
+                    "description": "Personal and corporate T1/T2 tax returns, tax planning, and CRA audit support"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Business Consulting",
+                    "description": "Financial analysis, cash flow forecasting, and business structure advice"
+                }
+            }
+        ]
+    }
+}
+</script>
+
     <!-- WordPress head -->
     <?php wp_head(); ?>
     
@@ -20,6 +88,9 @@ Template Name: Accounting & Tax Services
 </head>
 
 <body <?php body_class(); ?>>
+
+<!-- Skip to main content for accessibility -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
 <!-- Navigation -->
 <nav class="navbar">
@@ -58,7 +129,7 @@ Template Name: Accounting & Tax Services
 </div>
 
 <!-- Landing Page Hero -->
-<section class="landing-hero accounting-hero">
+<section class="landing-hero accounting-hero" id="main-content">
     <div class="landing-hero-container">
         <div class="landing-hero-content">
             <h1 class="landing-hero-title">Accounting & Tax Services</h1>
@@ -105,41 +176,41 @@ Template Name: Accounting & Tax Services
                     <li>Bank and credit card reconciliation</li>
                     <li>Expense tracking and categorization</li>
                     <li>Accounts payable and receivable</li>
-                    <li>Monthly financial statements</li>
                     <li>Cash flow monitoring</li>
+                    <li>Monthly financial statements</li>
                 </ul>
             </div>
             <div class="accounting-card">
                 <h3 class="accounting-title">Year-End Preparation</h3>
                 <p class="accounting-description">Complete year-end services to prepare for tax season and beyond.</p>
                 <ul class="accounting-features">
-                    <li>Year-end adjusting entries</li>
+                    <li>General ledger cleanup and review</li>
+                    <li>Year-end journal entries</li>
+                    <li>Closing entries and period-end procedures</li>
                     <li>Financial statement preparation</li>
                     <li>Tax document organization</li>
-                    <li>T4 and T5 slip preparation</li>
-                    <li>CRA filing requirements</li>
                 </ul>
             </div>
             <div class="accounting-card">
                 <h3 class="accounting-title">Payroll Processing</h3>
-                <p class="accounting-description">Complete payroll management including deductions and remittances, with recommendations for dedicated payroll services for larger clients.</p>
+                <p class="accounting-description">Full-service payroll processing ensuring employees are paid correctly and all tax obligations are met on time.</p>
                 <ul class="accounting-features">
                     <li>Employee pay calculations</li>
                     <li>Tax deductions and benefits</li>
                     <li>CPP, EI, and tax remittances to CRA</li>
-                    <li>T4 slip preparation</li>
+                    <li>ROE (Record of Employment) preparation</li>
                     <li>Integration with existing payroll schedules</li>
                 </ul>
             </div>
             <div class="accounting-card">
-                <h3 class="accounting-title">Business Consulting</h3>
-                <p class="accounting-description">Strategic financial guidance to help grow your business.</p>
+                <h3 class="accounting-title">Filing & Compliance</h3>
+                <p class="accounting-description">Ongoing filing and compliance services to keep your business in good standing with all tax authorities.</p>
                 <ul class="accounting-features">
-                    <li>Financial performance analysis</li>
-                    <li>Cash flow forecasting</li>
-                    <li>Business structure advice</li>
-                    <li>Growth strategy support</li>
-                    <li>Cost reduction opportunities</li>
+                    <li>GST return preparation and filing</li>
+                    <li>PST return preparation and filing</li>
+                    <li>Payroll source deductions</li>
+                    <li>Information returns (T4, T5, etc.)</li>
+                    <li>Meeting all tax filing deadlines</li>
                 </ul>
             </div>
         </div>
@@ -159,17 +230,17 @@ Template Name: Accounting & Tax Services
                 <p class="tax-description">Comprehensive personal tax preparation to maximize your refund.</p>
                 <ul class="tax-features">
                     <li>T1 general tax returns</li>
-                    <li>Income optimization strategies</li>
                     <li>Deduction maximization</li>
                     <li>Tax credit identification</li>
+                    <li>Income optimization strategies</li>
                     <li>Electronic filing included</li>
                 </ul>
             </div>
             <div class="tax-card">
                 <h3 class="tax-title">Corporate Tax Returns</h3>
-                <p class="tax-description">T2 corporate tax preparation focused on straightforward CCPC returns for incorporated professionals and small businesses.</p>
+                <p class="tax-description">T2 corporate tax preparation focused on CCPC returns for incorporated professionals and small businesses.</p>
                 <ul class="tax-features">
-                    <li>T2 corporate tax returns (CCPC focus)</li>
+                    <li>T2 corporate tax returns</li>
                     <li>Small business deduction optimization</li>
                     <li>Capital cost allowance planning</li>
                     <li>Simple corporate structures</li>
@@ -191,11 +262,11 @@ Template Name: Accounting & Tax Services
                 <h3 class="tax-title">CRA Support</h3>
                 <p class="tax-description">Experienced CRA representation and support with proven success in audit situations.</p>
                 <ul class="tax-features">
-                    <li>CRA audit representation with successful track record</li>
-                    <li>Notice of assessment reviews</li>
                     <li>CRA correspondence handling</li>
-                    <li>GST and BC PST compliance support</li>
-                    <li>Information returns (T4/T4A/T5/T5018)</li>
+                    <li>Notice of assessment reviews</li>
+                    <li>T1/T2 adjustment requests</li>
+                    <li>Reassessment objections and appeals</li>
+                    <li>CRA audit representation with successful track record</li>
                 </ul>
             </div>
         </div>
@@ -237,7 +308,7 @@ Template Name: Accounting & Tax Services
 <section class="landing-cta accounting-cta">
     <div class="cta-container">
         <h2 class="cta-title">Ready to Optimize Your Financial Management?</h2>
-        <p class="cta-text">Get professional accounting and tax services from Vernon's experienced financial expert.</p>
+        <p class="cta-text">Get expert accounting and tax services from Vernon's experienced financial expert.</p>
         <div class="hero-buttons centered-buttons">
             <a href="<?php echo home_url(); ?>#contact" class="btn-primary">Book Consultation</a>
             <a href="tel:250-307-1395" class="btn-secondary">Call (250) 307-1395</a>
@@ -270,50 +341,6 @@ Template Name: Accounting & Tax Services
 <div class="copyright-footer">
     © <?php echo date('Y'); ?> M&M Office Solutions. All rights reserved.
 </div>
-
-<script>
-    // Hamburger menu functionality
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobileMenu');
-    
-    function toggleMobileMenu() {
-        hamburger.classList.toggle('active');
-        mobileMenu.classList.toggle('active');
-        
-        // Prevent body scrolling when menu is open
-        if (mobileMenu.classList.contains('active')) {
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.body.style.overflow = '';
-        }
-    }
-    
-    function closeMobileMenu() {
-        hamburger.classList.remove('active');
-        mobileMenu.classList.remove('active');
-        document.body.style.overflow = '';
-    }
-    
-    hamburger.addEventListener('click', toggleMobileMenu);
-    
-    mobileMenu.addEventListener('click', function(e) {
-        if (e.target === mobileMenu) {
-            closeMobileMenu();
-        }
-    });
-    
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
-            closeMobileMenu();
-        }
-    });
-
-    window.addEventListener('resize', function() {
-        if (window.innerWidth > 768 && mobileMenu.classList.contains('active')) {
-            closeMobileMenu();
-        }
-    });
-</script>
 
 <?php wp_footer(); ?>
 </body>

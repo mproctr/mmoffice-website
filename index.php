@@ -7,6 +7,13 @@
     <title>M&M Office Solutions | Office Equipment & Accounting Services - Vernon BC</title>
     <meta name="description" content="Two professional divisions under one roof - office equipment services and accounting/tax services for Vernon, BC businesses. Expert IT support, printer repair, bookkeeping, and tax preparation.">
 
+    <!-- Preconnect for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <!-- Local Business Schema -->
     <script type="application/ld+json">
 {
@@ -96,6 +103,9 @@
 
 <body <?php body_class(); ?>>
 
+<!-- Skip to main content for accessibility -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
 <!-- Navigation -->
 <nav class="navbar">
     <div class="nav-container">
@@ -135,7 +145,7 @@
 </div>
 
 <!-- Hero Section -->
-<section class="hero">
+<section class="hero" id="main-content">
     <div class="hero-container">
         <div class="hero-content">
             <h1 class="hero-title">Vernon's Trusted Accounting & Office Technology Experts</h1>
@@ -338,80 +348,6 @@
 <div class="copyright-footer">
     © <?php echo date('Y'); ?> M&M Office Solutions. All rights reserved.
 </div>
-
-<script>
-    // Hamburger menu functionality
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobileMenu');
-    
-    function toggleMobileMenu() {
-        hamburger.classList.toggle('active');
-        mobileMenu.classList.toggle('active');
-        
-        // Prevent body scrolling when menu is open
-        if (mobileMenu.classList.contains('active')) {
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.body.style.overflow = '';
-        }
-    }
-    
-    function closeMobileMenu() {
-        hamburger.classList.remove('active');
-        mobileMenu.classList.remove('active');
-        document.body.style.overflow = '';
-    }
-    
-    // Event listeners
-    hamburger.addEventListener('click', toggleMobileMenu);
-    
-    // Close menu when clicking outside
-    mobileMenu.addEventListener('click', function(e) {
-        if (e.target === mobileMenu) {
-            closeMobileMenu();
-        }
-    });
-    
-    // Close menu on escape key
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
-            closeMobileMenu();
-        }
-    });
-
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
-
-    // Navbar scroll effect
-    window.addEventListener('scroll', function() {
-        const navbar = document.querySelector('.navbar');
-        if (window.scrollY > 100) {
-            navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-            navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
-        } else {
-            navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-            navbar.style.boxShadow = 'none';
-        }
-    });
-    
-    // Close mobile menu on window resize if open
-    window.addEventListener('resize', function() {
-        if (window.innerWidth > 768 && mobileMenu.classList.contains('active')) {
-            closeMobileMenu();
-        }
-    });
-</script>
 
 <?php wp_footer(); ?>
 </body>
