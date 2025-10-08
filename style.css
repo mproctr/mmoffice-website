@@ -1691,6 +1691,32 @@ h1, h2, h3, h4, h5, h6 {
         margin: 0 auto;
     }
 
+    /* Landing page mobile styles */
+    .landing-hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+        padding: 100px 1rem 2rem 1rem;
+    }
+
+    .landing-hero-title {
+        font-size: 2.5rem;
+    }
+
+    .landing-hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    /* Landing page service grids - single column on mobile */
+    .equipment-grid,
+    .accounting-grid,
+    .tax-grid,
+    .it-grid,
+    .supplies-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
     .services-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
