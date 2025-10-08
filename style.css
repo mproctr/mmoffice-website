@@ -27,6 +27,17 @@ Version: 1.0.0
     top: 0;
 }
 
+/* Adjust for WordPress admin bar when logged in */
+.admin-bar .navbar {
+    top: 32px;
+}
+
+@media screen and (max-width: 782px) {
+    .admin-bar .navbar {
+        top: 46px;
+    }
+}
+
 /* Lucide SVG styling */
 .lucide-icon {
     display: inline-block;
