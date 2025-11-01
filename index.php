@@ -149,7 +149,7 @@
     <div class="hero-container">
         <div class="hero-content">
             <h1 class="hero-title">Vernon's Trusted Accounting & Office Technology Experts</h1>
-            <p class="hero-subtitle">Complete business solutions for Vernon companies - professional office equipment services and expert accounting support under one roof.</p>
+            <p class="hero-subtitle">Dependable office equipment services and expert financial management under one roof.</p>
             <div class="hero-buttons">
                 <a href="#contact" class="btn-primary">Get Started Today</a>
                 <a href="#services" class="btn-secondary">Our Services</a>
