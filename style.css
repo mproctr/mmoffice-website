@@ -1680,7 +1680,8 @@ h1, h2, h3, h4, h5, h6 {
         grid-template-columns: 1fr;
         text-align: center;
         gap: 2rem;
-        padding-top: 100px;
+        padding: 2rem 2rem 3rem 2rem;
+        padding-top: 90px;
     }
 
     .hero-title {
