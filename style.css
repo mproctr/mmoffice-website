@@ -293,6 +293,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     position: relative;
     overflow: hidden;
+    padding-top: 90px;
 }
 
 .hero::before {
@@ -308,7 +309,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 120px 2rem 3rem 2rem;
+    padding: 2rem 2rem 3rem 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
@@ -1681,7 +1682,6 @@ h1, h2, h3, h4, h5, h6 {
         text-align: center;
         gap: 2rem;
         padding: 2rem 2rem 3rem 2rem;
-        padding-top: 90px;
     }
 
     .hero-title {
