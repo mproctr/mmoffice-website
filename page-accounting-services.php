@@ -110,10 +110,10 @@ Template Name: Accounting & Tax Services
             <li><a href="<?php echo home_url('/office-equipment'); ?>">Office Equipment & IT</a></li>
             <li><a href="<?php echo home_url('/accounting-services'); ?>" class="current-page">Accounting & Tax</a></li>
             <li><a href="<?php echo home_url(); ?>#team">Our Team</a></li>
-            <li><a href="<?php echo home_url(); ?>#contact">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-        
-        <a href="<?php echo home_url(); ?>#contact" class="cta-button">Get Quote</a>
+
+        <a href="#contact" class="cta-button">Get Quote</a>
     </div>
 </nav>
 
@@ -124,7 +124,7 @@ Template Name: Accounting & Tax Services
         <li><a href="<?php echo home_url('/office-equipment'); ?>" onclick="closeMobileMenu()">Office Equipment & IT</a></li>
         <li><a href="<?php echo home_url('/accounting-services'); ?>" onclick="closeMobileMenu()">Accounting & Tax</a></li>
         <li><a href="<?php echo home_url(); ?>#team" onclick="closeMobileMenu()">Our Team</a></li>
-        <li><a href="<?php echo home_url(); ?>#contact" onclick="closeMobileMenu()">Contact</a></li>
+        <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
     </ul>
 </div>
 
@@ -135,7 +135,7 @@ Template Name: Accounting & Tax Services
             <h1 class="landing-hero-title">Accounting & Tax Services</h1>
             <p class="landing-hero-subtitle">Professional financial management and tax preparation for Vernon individuals and small businesses - maximizing deductions while ensuring compliance.</p>
             <div class="hero-buttons">
-                <a href="<?php echo home_url(); ?>#contact" class="btn-primary">Get Consultation</a>
+                <a href="#contact" class="btn-primary">Get Consultation</a>
                 <a href="tel:250-307-1395" class="btn-secondary">Call (250) 307-1395</a>
             </div>
         </div>
@@ -309,14 +309,32 @@ Template Name: Accounting & Tax Services
 </section>
 
 <!-- CTA Section -->
-<section class="landing-cta accounting-cta">
+<section class="landing-cta accounting-cta" id="contact">
     <div class="cta-container">
         <h2 class="cta-title">Ready to Optimize Your Financial Management?</h2>
         <p class="cta-text">Get expert accounting and tax services from Vernon's experienced financial expert.</p>
-        <div class="hero-buttons centered-buttons">
-            <a href="<?php echo home_url(); ?>#contact" class="btn-primary">Book Consultation</a>
-            <a href="tel:250-307-1395" class="btn-secondary">Call (250) 307-1395</a>
+
+        <!-- Contact Form Container -->
+        <div class="contact-form-container">
+            <?php
+            if (function_exists('wpforms_display')) {
+                wpforms_display('13');
+            } else {
+                echo '<p class="form-fallback">Contact form temporarily unavailable. Please email us directly at <a href="mailto:info@mmoffice.ca">info@mmoffice.ca</a></p>';
+            }
+            ?>
         </div>
+
+        <!-- Alternative Contact Methods -->
+        <div class="alternative-contact">
+            <p class="contact-prompt">Or reach us directly:</p>
+            <div class="hero-buttons">
+                <a href="tel:250-307-1395" class="btn-primary">Call Now</a>
+                <a href="mailto:info@mmoffice.ca" class="btn-secondary">Email Us</a>
+            </div>
+        </div>
+
+        <!-- Contact Information -->
         <div class="contact-info">
             <div class="contact-item">
                 <div class="contact-icon"><i class="fas fa-phone"></i></div>

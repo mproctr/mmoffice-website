@@ -110,10 +110,10 @@ Template Name: Office Equipment & IT Services
             <li><a href="<?php echo home_url('/office-equipment'); ?>" class="current-page">Office Equipment & IT</a></li>
             <li><a href="<?php echo home_url('/accounting-services'); ?>">Accounting & Tax</a></li>
             <li><a href="<?php echo home_url(); ?>#team">Our Team</a></li>
-            <li><a href="<?php echo home_url(); ?>#contact">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-        
-        <a href="<?php echo home_url(); ?>#contact" class="cta-button">Get Quote</a>
+
+        <a href="#contact" class="cta-button">Get Quote</a>
     </div>
 </nav>
 
@@ -124,7 +124,7 @@ Template Name: Office Equipment & IT Services
         <li><a href="<?php echo home_url('/office-equipment'); ?>" onclick="closeMobileMenu()">Office Equipment & IT</a></li>
         <li><a href="<?php echo home_url('/accounting-services'); ?>" onclick="closeMobileMenu()">Accounting & Tax</a></li>
         <li><a href="<?php echo home_url(); ?>#team" onclick="closeMobileMenu()">Our Team</a></li>
-        <li><a href="<?php echo home_url(); ?>#contact" onclick="closeMobileMenu()">Contact</a></li>
+        <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
     </ul>
 </div>
 
@@ -135,7 +135,7 @@ Template Name: Office Equipment & IT Services
             <h1 class="landing-hero-title">Office Equipment & IT Services</h1>
             <p class="landing-hero-subtitle">Complete technology solutions for Vernon businesses - from printer repair to network support, we keep your office running efficiently.</p>
             <div class="hero-buttons">
-                <a href="<?php echo home_url(); ?>#contact" class="btn-primary">Get Service Quote</a>
+                <a href="#contact" class="btn-primary">Get Service Quote</a>
                 <a href="tel:250-307-1395" class="btn-secondary">Call (250) 307-1395</a>
             </div>
         </div>
@@ -309,14 +309,32 @@ Template Name: Office Equipment & IT Services
 </section>
 
 <!-- CTA Section -->
-<section class="landing-cta office-cta">
+<section class="landing-cta office-cta" id="contact">
     <div class="cta-container">
         <h2 class="cta-title">Ready to Fix Your Office Equipment Issues?</h2>
         <p class="cta-text">Get professional service from Vernon's most experienced office equipment technician.</p>
-        <div class="hero-buttons centered-buttons">
-            <a href="<?php echo home_url(); ?>#contact" class="btn-primary">Request Service</a>
-            <a href="tel:250-307-1395" class="btn-secondary">Call (250) 307-1395</a>
+
+        <!-- Contact Form Container -->
+        <div class="contact-form-container">
+            <?php
+            if (function_exists('wpforms_display')) {
+                wpforms_display('13');
+            } else {
+                echo '<p class="form-fallback">Contact form temporarily unavailable. Please email us directly at <a href="mailto:info@mmoffice.ca">info@mmoffice.ca</a></p>';
+            }
+            ?>
         </div>
+
+        <!-- Alternative Contact Methods -->
+        <div class="alternative-contact">
+            <p class="contact-prompt">Or reach us directly:</p>
+            <div class="hero-buttons">
+                <a href="tel:250-307-1395" class="btn-primary">Call Now</a>
+                <a href="mailto:info@mmoffice.ca" class="btn-secondary">Email Us</a>
+            </div>
+        </div>
+
+        <!-- Contact Information -->
         <div class="contact-info">
             <div class="contact-item">
                 <div class="contact-icon"><i class="fas fa-phone"></i></div>
