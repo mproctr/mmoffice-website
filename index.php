@@ -101,26 +101,26 @@
     "mainEntity": [
         {
             "@type": "Question",
-            "name": "What areas do you serve?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "We proudly serve Vernon, BC and surrounding areas including Kelowna, Armstrong, Enderby, and the North Okanagan region. For office equipment service calls, we typically cover a 50km radius from Vernon. Accounting and tax services can be provided remotely for clients throughout British Columbia."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "How quickly can you respond to service requests?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "For office equipment emergencies, we prioritize same-day or next-day service whenever possible. For routine maintenance and accounting services, we typically schedule within 2-3 business days. Remote IT support is often available within hours of your call."
-            }
-        },
-        {
-            "@type": "Question",
             "name": "What printer brands do you service?",
             "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "We service all major printer and multifunction brands including Epson, KonicaMinolta, Canon, Ricoh, HP, Lexmark, Sharp, Kyocera, Toshiba, and Brother. Our 25+ years of experience covers both laser and inkjet printers, as well as large multifunction devices."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What areas do you serve?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We proudly serve Vernon, BC and surrounding areas including Kelowna, Armstrong, Enderby, and the North Okanagan region. For office equipment service calls, we typically cover a 50km radius from Vernon."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do you sell toner cartridges and office supplies?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely! Office supplies, particularly toner cartridges, are one of our main sales focuses. We stock both OEM (original manufacturer) and compatible cartridges for frequently-used models. We offer competitive pricing, bulk discounts, and local delivery service."
             }
         },
         {
@@ -133,10 +133,10 @@
         },
         {
             "@type": "Question",
-            "name": "Do you sell office supplies and toner cartridges?",
+            "name": "Do you offer remote IT support?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Absolutely! Office supplies, particularly toner cartridges, are one of our main sales focuses. We stock both OEM (original manufacturer) and compatible cartridges for frequently-used models, and can order specialty items. We offer competitive pricing, bulk discounts, and local delivery service."
+                "text": "Yes, we provide remote support for software issues, printer configuration, network troubleshooting, and system maintenance. Remote support saves you time and travel costs, and we can often resolve issues the same day you call."
             }
         },
         {
@@ -144,23 +144,7 @@
             "name": "What size businesses do you work with?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "We specialize in individuals, sole proprietorships, and small businesses typically with 1-20 employees. Our expertise includes professional services, retail, healthcare, and trades."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "Do you handle payroll processing?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, we provide full-service payroll processing including employee pay calculations, tax deductions, CPP and EI remittances to CRA, and preparation of Records of Employment (ROEs)."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "Can you help with CRA audits or reassessments?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, we have a proven track record of successfully representing clients through CRA audits and reassessment disputes. We handle all correspondence, prepare documentation, file objections when warranted, and work to achieve the best possible outcome."
+                "text": "We specialize in individuals, sole proprietorships, and small businesses typically with 1-20 employees. Our expertise includes professional services, retail, healthcare, and trades. We focus on providing personalized service that larger firms can't match."
             }
         },
         {
@@ -173,10 +157,26 @@
         },
         {
             "@type": "Question",
-            "name": "How much do your services cost?",
+            "name": "How much do your accounting services cost?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Pricing varies based on the complexity and scope of work. For accounting services, monthly bookkeeping typically starts around $200-400/month depending on transaction volume. Tax returns range from $150 for simple personal returns to $800+ for corporate returns. Contact us for a free, no-obligation quote specific to your needs."
+                "text": "Monthly bookkeeping typically starts around $200-400/month depending on transaction volume. Tax returns range from $150 for simple personal returns to $800+ for corporate returns. Contact us for a free, no-obligation quote specific to your needs."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can you help with CRA audits?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we have a proven track record of successfully representing clients through CRA audits and reassessment disputes. We handle all correspondence, prepare documentation, file objections when warranted, and work to achieve the best possible outcome."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do you handle payroll processing?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we provide full-service payroll processing including employee pay calculations, tax deductions, CPP and EI remittances to CRA, and preparation of Records of Employment (ROEs). We ensure employees are paid accurately and on time."
             }
         }
     ]
@@ -391,44 +391,9 @@
             <p class="section-subtitle">Get answers to common questions about our office equipment and accounting services</p>
         </div>
         <div class="faq-grid">
-            <!-- General Questions -->
+            <!-- Office Equipment & IT Services -->
             <div class="faq-category">
-                <h3 class="faq-category-title">General Questions</h3>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span>What areas do you serve?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>We proudly serve Vernon, BC and surrounding areas including Kelowna, Armstrong, Enderby, and the North Okanagan region. For office equipment service calls, we typically cover a 50km radius from Vernon. Accounting and tax services can be provided remotely for clients throughout British Columbia.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span>How quickly can you respond to service requests?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>For office equipment emergencies, we prioritize same-day or next-day service whenever possible. For routine maintenance and accounting services, we typically schedule within 2-3 business days. Remote IT support is often available within hours of your call.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span>Why should I use one company for both office equipment and accounting?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Having one trusted partner simplifies your vendor relationships and creates cost efficiencies. We can coordinate equipment leases with tax planning, ensure proper documentation for CRA compliance, and provide integrated support for all your business operations. Plus, you have one point of contact for multiple needs.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Office Equipment Questions -->
-            <div class="faq-category">
-                <h3 class="faq-category-title">Office Equipment & IT</h3>
+                <h3 class="faq-category-title">Office Equipment & IT Services</h3>
 
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFAQ(this)">
@@ -442,31 +407,31 @@
 
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What areas do you serve?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We proudly serve Vernon, BC and surrounding areas including Kelowna, Armstrong, Enderby, and the North Okanagan region. For office equipment service calls, we typically cover a 50km radius from Vernon.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Do you sell toner cartridges and office supplies?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! Office supplies, particularly toner cartridges, are one of our main sales focuses. We stock both OEM (original manufacturer) and compatible cartridges for frequently-used models. We offer competitive pricing, bulk discounts, and local delivery service.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
                         <span>Do you offer preventive maintenance contracts?</span>
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Yes! Preventive maintenance programs help extend equipment life and prevent costly breakdowns. We offer scheduled maintenance visits that include cleaning, calibration, parts replacement, and performance optimization. Contact us for a customized maintenance plan for your office.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span>Do you sell office supplies and toner cartridges?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Absolutely! Office supplies, particularly toner cartridges, are one of our main sales focuses. We stock both OEM (original manufacturer) and compatible cartridges for frequently-used models, and can order specialty items. We offer competitive pricing, bulk discounts, and local delivery service.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span>Can you help me choose the right office equipment for my business?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes, we provide technology consulting to help you select the right equipment for your needs and budget. We'll assess your printing volume, features you need, space constraints, and budget to recommend the best solution - whether new or refurbished equipment.</p>
+                        <p>Yes! Preventive maintenance programs help extend equipment life and prevent costly breakdowns. We offer scheduled maintenance visits that include cleaning, calibration, parts replacement, and performance optimization.</p>
                     </div>
                 </div>
 
@@ -481,7 +446,7 @@
                 </div>
             </div>
 
-            <!-- Accounting & Tax Questions -->
+            <!-- Accounting & Tax Services -->
             <div class="faq-category">
                 <h3 class="faq-category-title">Accounting & Tax Services</h3>
 
@@ -497,36 +462,6 @@
 
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span>Do you handle payroll processing?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes, we provide full-service payroll processing including employee pay calculations, tax deductions, CPP and EI remittances to CRA, and preparation of Records of Employment (ROEs). We integrate seamlessly with your existing payroll schedule to ensure employees are paid accurately and on time.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span>What documents do I need to prepare my tax return?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>For personal taxes, bring all T-slips (T4, T5, T3, etc.), receipts for deductions (medical, charitable donations, childcare), and RRSP contribution slips. For business taxes, we need your year-end financial statements, income and expense records, and any correspondence from CRA. We'll provide a detailed checklist when you book your appointment.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span>Can you help with CRA audits or reassessments?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes, we have a proven track record of successfully representing clients through CRA audits and reassessment disputes. We handle all correspondence, prepare documentation, file objections when warranted, and work to achieve the best possible outcome. Our experience includes T1 and T2 adjustments and appeals.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
                         <span>Do you prepare both personal and corporate tax returns?</span>
                         <span class="faq-icon">+</span>
                     </button>
@@ -534,29 +469,34 @@
                         <p>Yes, we prepare both personal T1 tax returns and corporate T2 returns. We specialize in Canadian Controlled Private Corporations (CCPCs) and simple corporate structures. We also handle GST/PST returns, information returns (T4, T5), and year-end financial statement preparation.</p>
                     </div>
                 </div>
-            </div>
-
-            <!-- Pricing & Getting Started -->
-            <div class="faq-category">
-                <h3 class="faq-category-title">Pricing & Getting Started</h3>
 
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span>How much do your services cost?</span>
+                        <span>How much do your accounting services cost?</span>
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Pricing varies based on the complexity and scope of work. Office equipment repairs are typically quoted after diagnosis. Toner and supplies have transparent pricing. For accounting services, monthly bookkeeping typically starts around $200-400/month depending on transaction volume. Tax returns range from $150 for simple personal returns to $800+ for corporate returns. Contact us for a free, no-obligation quote specific to your needs.</p>
+                        <p>Monthly bookkeeping typically starts around $200-400/month depending on transaction volume. Tax returns range from $150 for simple personal returns to $800+ for corporate returns. Contact us for a free, no-obligation quote specific to your needs.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span>How do I get started?</span>
+                        <span>Can you help with CRA audits?</span>
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Simply call us at (250) 307-1395 or use the contact form on this page. For office equipment issues, describe the problem and we'll schedule a service call. For accounting services, we'll arrange a free initial consultation to understand your needs and provide a customized quote. We'll make the process easy and straightforward.</p>
+                        <p>Yes, we have a proven track record of successfully representing clients through CRA audits and reassessment disputes. We handle all correspondence, prepare documentation, file objections when warranted, and work to achieve the best possible outcome.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Do you handle payroll processing?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we provide full-service payroll processing including employee pay calculations, tax deductions, CPP and EI remittances to CRA, and preparation of Records of Employment (ROEs). We ensure employees are paid accurately and on time.</p>
                     </div>
                 </div>
             </div>
