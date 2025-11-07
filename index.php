@@ -104,7 +104,7 @@
             "name": "What printer brands do you service?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "We service all major printer and multifunction brands including Epson, KonicaMinolta, Canon, Ricoh, HP, Lexmark, Sharp, Kyocera, Toshiba, and Brother. Our 25+ years of experience covers both laser and inkjet printers, as well as large multifunction devices."
+                "text": "We service all major printer and multifunction brands including Epson, KonicaMinolta, Canon, Ricoh, HP, Lexmark, Sharp, Kyocera, Toshiba, and Brother. We cover both laser and inkjet printers, as well as large multifunction devices."
             }
         },
         {
@@ -112,7 +112,7 @@
             "name": "What areas do you serve?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "We proudly serve Vernon, BC and surrounding areas including Kelowna, Armstrong, Enderby, and the North Okanagan region. For office equipment service calls, we typically cover a 50km radius from Vernon."
+                "text": "We proudly serve Vernon, BC and surrounding areas including Kelowna, Armstrong, Enderby, and the North Okanagan region. For office equipment service calls, we typically cover a 50km radius from Vernon. We can travel outside this area for an additional cost."
             }
         },
         {
@@ -144,7 +144,7 @@
             "name": "What size businesses do you work with?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "We specialize in individuals, sole proprietorships, and small businesses typically with 1-20 employees. Our expertise includes professional services, retail, healthcare, and trades. We focus on providing personalized service that larger firms can't match."
+                "text": "We specialize in small businesses, sole proprietorships, and incorporated professionals typically with 1-20 employees. Our expertise includes professional services, retail, healthcare, and trades. We focus on providing personalized service that larger firms can't match."
             }
         },
         {
@@ -160,7 +160,7 @@
             "name": "Do you provide year-round support or just tax season?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes, we provide comprehensive year-round support including monthly bookkeeping, quarterly reviews, tax planning, and financial consulting - not just tax season preparation. Our ongoing clients benefit from proactive tax strategies, organized records, and consistent financial guidance throughout the year."
+                "text": "Yes, we provide comprehensive year-round support including monthly bookkeeping, quarterly reviews, tax planning, and financial consulting - not just tax season preparation."
             }
         },
         {
@@ -401,7 +401,7 @@
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>We service all major printer and multifunction brands including Epson, KonicaMinolta, Canon, Ricoh, HP, Lexmark, Sharp, Kyocera, Toshiba, and Brother. Our 25+ years of experience covers both laser and inkjet printers, as well as large multifunction devices.</p>
+                        <p>We service all major printer and multifunction brands including Epson, KonicaMinolta, Canon, Ricoh, HP, Lexmark, Sharp, Kyocera, Toshiba, and Brother. We cover both laser and inkjet printers, as well as large multifunction devices.</p>
                     </div>
                 </div>
 
@@ -411,7 +411,7 @@
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>We proudly serve Vernon, BC and surrounding areas including Kelowna, Armstrong, Enderby, and the North Okanagan region. For office equipment service calls, we typically cover a 50km radius from Vernon.</p>
+                        <p>We proudly serve Vernon, BC and surrounding areas including Kelowna, Armstrong, Enderby, and the North Okanagan region. For office equipment service calls, we typically cover a 50km radius from Vernon. We can travel outside this area for an additional cost.</p>
                     </div>
                 </div>
 
@@ -456,7 +456,7 @@
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>We specialize in individuals, sole proprietorships, and small businesses typically with 1-20 employees. Our expertise includes professional services, retail, healthcare, and trades. We focus on providing personalized service that larger firms can't match.</p>
+                        <p>We specialize in small businesses, sole proprietorships, and incorporated professionals typically with 1-20 employees. Our expertise includes professional services, retail, healthcare, and trades. We focus on providing personalized service that larger firms can't match.</p>
                     </div>
                 </div>
 
@@ -476,7 +476,7 @@
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Yes, we provide comprehensive year-round support including monthly bookkeeping, quarterly reviews, tax planning, and financial consulting - not just tax season preparation. Our ongoing clients benefit from proactive tax strategies, organized records, and consistent financial guidance throughout the year.</p>
+                        <p>Yes, we provide comprehensive year-round support including monthly bookkeeping, quarterly reviews, tax planning, and financial consulting - not just tax season preparation.</p>
                     </div>
                 </div>
 
