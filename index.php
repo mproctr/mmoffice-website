@@ -456,7 +456,7 @@
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>We specialize in small businesses, sole proprietorships, and incorporated professionals typically with 1-20 employees. Our expertise includes professional services, retail, healthcare, and trades. We focus on providing personalized service that larger firms can't match.</p>
+                        <p>We specialize in small businesses, sole proprietorships, and incorporated professionals typically with 1-20 employees. We work with clients across diverse business sectors, providing personalized service that larger firms can't match.</p>
                     </div>
                 </div>
 
