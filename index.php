@@ -152,15 +152,15 @@
             "name": "Do you prepare both personal and corporate tax returns?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes, we prepare both personal T1 tax returns and corporate T2 returns. We specialize in Canadian Controlled Private Corporations (CCPCs) and simple corporate structures. We also handle GST/PST returns, information returns (T4, T5), and year-end financial statement preparation."
+                "text": "Yes, we prepare both personal T1 tax returns and corporate T2 returns. We specialize in Canadian Controlled Private Corporations (CCPCs) and simple corporate structures. We also handle GST/PST returns, information returns (T4, T5, etc.), and year-end preparation."
             }
         },
         {
             "@type": "Question",
-            "name": "How much do your accounting services cost?",
+            "name": "Do you provide year-round support or just tax season?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Monthly bookkeeping typically starts around $200-400/month depending on transaction volume. Tax returns range from $150 for simple personal returns to $800+ for corporate returns. Contact us for a free, no-obligation quote specific to your needs."
+                "text": "Yes, we provide comprehensive year-round support including monthly bookkeeping, quarterly reviews, tax planning, and financial consulting - not just tax season preparation. Our ongoing clients benefit from proactive tax strategies, organized records, and consistent financial guidance throughout the year."
             }
         },
         {
@@ -466,17 +466,17 @@
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Yes, we prepare both personal T1 tax returns and corporate T2 returns. We specialize in Canadian Controlled Private Corporations (CCPCs) and simple corporate structures. We also handle GST/PST returns, information returns (T4, T5), and year-end financial statement preparation.</p>
+                        <p>Yes, we prepare both personal T1 tax returns and corporate T2 returns. We specialize in Canadian Controlled Private Corporations (CCPCs) and simple corporate structures. We also handle GST/PST returns, information returns (T4, T5, etc.), and year-end preparation.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span>How much do your accounting services cost?</span>
+                        <span>Do you provide year-round support or just tax season?</span>
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Monthly bookkeeping typically starts around $200-400/month depending on transaction volume. Tax returns range from $150 for simple personal returns to $800+ for corporate returns. Contact us for a free, no-obligation quote specific to your needs.</p>
+                        <p>Yes, we provide comprehensive year-round support including monthly bookkeeping, quarterly reviews, tax planning, and financial consulting - not just tax season preparation. Our ongoing clients benefit from proactive tax strategies, organized records, and consistent financial guidance throughout the year.</p>
                     </div>
                 </div>
 
