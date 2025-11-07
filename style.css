@@ -1266,7 +1266,57 @@ h1, h2, h3, h4, h5, h6 {
     color: #1e293b;
     margin-bottom: 1.5rem;
     padding-bottom: 0.75rem;
-    border-bottom: 2px solid #0891b2;
+    border-bottom: 2px solid #64748b;
+}
+
+/* Office Equipment FAQ - Teal accent */
+.office-equipment-faq .faq-category-title {
+    border-bottom-color: #14b8a6;
+}
+
+.office-equipment-faq .faq-item:hover {
+    border-left-color: #5eead4;
+}
+
+.office-equipment-faq .faq-item.active {
+    border-left-color: #14b8a6;
+}
+
+.office-equipment-faq .faq-item.active .faq-question {
+    color: #14b8a6;
+}
+
+.office-equipment-faq .faq-icon {
+    color: #14b8a6;
+}
+
+.office-equipment-faq .faq-question:hover {
+    color: #14b8a6;
+}
+
+/* Accounting FAQ - Blue accent */
+.accounting-faq .faq-category-title {
+    border-bottom-color: #0891b2;
+}
+
+.accounting-faq .faq-item:hover {
+    border-left-color: #67e8f9;
+}
+
+.accounting-faq .faq-item.active {
+    border-left-color: #0891b2;
+}
+
+.accounting-faq .faq-item.active .faq-question {
+    color: #0891b2;
+}
+
+.accounting-faq .faq-icon {
+    color: #0891b2;
+}
+
+.accounting-faq .faq-question:hover {
+    color: #0891b2;
 }
 
 .faq-item {
@@ -1274,14 +1324,6 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 1rem;
     margin-bottom: 1rem;
     transition: border-color 0.3s ease;
-}
-
-.faq-item:hover {
-    border-left-color: #cbd5e1;
-}
-
-.faq-item.active {
-    border-left-color: #0891b2;
 }
 
 .faq-item:last-child {
@@ -1305,10 +1347,6 @@ h1, h2, h3, h4, h5, h6 {
     transition: color 0.3s ease;
 }
 
-.faq-question:hover {
-    color: #0891b2;
-}
-
 .faq-question span:first-child {
     flex: 1;
 }
@@ -1316,7 +1354,6 @@ h1, h2, h3, h4, h5, h6 {
 .faq-icon {
     font-size: 1.5rem;
     font-weight: 300;
-    color: #0891b2;
     min-width: 24px;
     text-align: center;
     transition: transform 0.3s ease;
@@ -1337,10 +1374,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #64748b;
     line-height: 1.7;
     font-size: 0.95rem;
-}
-
-.faq-item.active .faq-question {
-    color: #0891b2;
 }
 
 /* FAQ Mobile Responsiveness */

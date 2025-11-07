@@ -392,7 +392,7 @@
         </div>
         <div class="faq-grid">
             <!-- Office Equipment & IT Services -->
-            <div class="faq-category">
+            <div class="faq-category office-equipment-faq">
                 <h3 class="faq-category-title">Office Equipment & IT Services</h3>
 
                 <div class="faq-item">
@@ -447,7 +447,7 @@
             </div>
 
             <!-- Accounting & Tax Services -->
-            <div class="faq-category">
+            <div class="faq-category accounting-faq">
                 <h3 class="faq-category-title">Accounting & Tax Services</h3>
 
                 <div class="faq-item">
